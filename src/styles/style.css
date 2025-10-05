@@ -104,15 +104,16 @@ button,
   text-decoration: none;
   width: fit-content;
 }
-button:hover svg,
-.btn:hover svg {
+button:hover svg, button:hover img,
+.btn:hover svg,
+.btn:hover img {
   transform: translateX(10%);
 }
 button svg, button img,
 .btn svg,
 .btn img {
-  width: 24px;
-  height: 24px;
+  width: 16px;
+  height: 16px;
   transition: all 0.3s;
 }
 button:disabled, button.disabled,
@@ -145,6 +146,25 @@ button:disabled, button.disabled,
   background-color: var(--color-secondary-300);
 }
 
+.btn-transparent {
+  background-color: transparent;
+  color: var(--color-white);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  backdrop-filter: none;
+}
+.btn-transparent:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+}
+.btn-transparent:active {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
 @font-face {
   font-family: "Gilroy";
   src: url("/src/assets/fonts/Gilroy-Regular.woff2") format("woff2");
@@ -165,6 +185,23 @@ button:disabled, button.disabled,
 }
 body {
   font-family: "Gilroy", sans-serif;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #166534;
+  animation: fadePulse 2s ease-in-out infinite;
+}
+
+@keyframes fadePulse {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

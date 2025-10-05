@@ -1,0 +1,16 @@
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #166534; // Tailwind green-800
+  animation: fadePulse 2s ease-in-out infinite;
+}
+
+@keyframes fadePulse {
+  0%, 100% {
+	opacity: 0.3;
+  }
+  50% {
+	opacity: 1;
+  }
+}
