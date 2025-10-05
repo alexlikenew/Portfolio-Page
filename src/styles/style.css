@@ -1,3 +1,170 @@
+@charset "UTF-8";
+/* Kolory bazowe */
+:root {
+  --color-primary: #7B11F9;
+  --color-primary-100: #a14cff; /* jaśniejszy odcień */
+  --color-primary-200: #7b11f9; /* bazowy */
+  --color-primary-300: #5c0fcc; /* ciemniejszy odcień */
+  --color-secondary: #F74D4D;
+  --color-secondary-100: #ffa4a4; /* jaśniejszy odcień */
+  --color-secondary-200: #f74d4d; /* bazowy */
+  --color-secondary-300: #c03b3b; /* ciemniejszy odcień */
+}
 
+/* Tekst */
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-primary-100 {
+  color: var(--color-primary-100);
+}
+
+.text-primary-200 {
+  color: var(--color-primary-200);
+}
+
+.text-primary-300 {
+  color: var(--color-primary-300);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-secondary-100 {
+  color: var(--color-secondary-100);
+}
+
+.text-secondary-200 {
+  color: var(--color-secondary-200);
+}
+
+.text-secondary-300 {
+  color: var(--color-secondary-300);
+}
+
+/* Tła */
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-primary-100 {
+  background-color: var(--color-primary-100);
+}
+
+.bg-primary-200 {
+  background-color: var(--color-primary-200);
+}
+
+.bg-primary-300 {
+  background-color: var(--color-primary-300);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.bg-secondary-100 {
+  background-color: var(--color-secondary-100);
+}
+
+.bg-secondary-200 {
+  background-color: var(--color-secondary-200);
+}
+
+.bg-secondary-300 {
+  background-color: var(--color-secondary-300);
+}
+
+.container {
+  padding-left: max(4vw, 24px);
+  padding-right: max(4vw, 24px);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(1312px + 8vw);
+}
+.container .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+button,
+.btn {
+  display: flex;
+  padding: 12px 24px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: all 200ms ease;
+  background-color: inherit;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  width: fit-content;
+}
+button:hover svg,
+.btn:hover svg {
+  transform: translateX(10%);
+}
+button svg, button img,
+.btn svg,
+.btn img {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s;
+}
+button:disabled, button.disabled,
+.btn:disabled,
+.btn.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.btn-primary {
+  background-color: var(--color-primary-200);
+  color: var(--color-white);
+}
+.btn-primary:hover {
+  background-color: var(--color-primary-100);
+}
+.btn-primary:active {
+  background-color: var(--color-primary-300);
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary-200);
+  color: var(--color-white);
+  border: 1px solid var(--color-secondary-300);
+}
+.btn-secondary:hover {
+  background-color: var(--color-secondary-100);
+}
+.btn-secondary:active {
+  background-color: var(--color-secondary-300);
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/src/assets/fonts/Gilroy-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/src/assets/fonts/Gilroy-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/src/assets/fonts/Gilroy-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  font-family: "Gilroy", sans-serif;
+}
 
 /*# sourceMappingURL=style.css.map */
