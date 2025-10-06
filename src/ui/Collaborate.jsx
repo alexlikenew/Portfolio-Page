@@ -9,15 +9,31 @@ function Collaborate(props) {
                     <img src={aboutImage} className="w-full h-full object-cover" alt=""/>
                 </div>
                 <div className="w-full flex flex-col">
-                    <h2 className="text-5xl font-bold">Collaborate with team members.</h2>
-                    <p className="opacity-70 mt-4 mb-12">We share common trends and strategies for improving your rental income.</p>
+                    <h2 className="text-5xl font-bold">Experience working in different environments</h2>
+                    <p className="opacity-70 mt-4 mb-12">
+                        Over the years, I’ve worked remotely, in hybrid teams, and on-site — adapting to various workflows and communication styles.
+                        I value collaboration, clear communication, and a shared sense of ownership in every project.
+                    </p>
+
                     <div className="flex flex-col gap-3 mb-8">
-                        <span className="text-xl">Project Based Groups</span>
-                        <span className="text-base opacity-70">With lots of unique blocks, you can easily build a page without coding.  </span>
+                        <span className="text-xl font-semibold">Remote Collaboration</span>
+                        <span className="text-base opacity-70">
+          I’m comfortable working fully remotely using tools like Slack, Notion, and GitHub to stay in sync and maintain productivity.
+        </span>
                     </div>
-                    <div className="flex flex-col gap-3 ">
-                        <span className="text-xl">Unlimited Video Meetings</span>
-                        <span className="text-base opacity-70">With lots of unique blocks, you can easily build a page without coding.  </span>
+
+                    <div className="flex flex-col gap-3 mb-8">
+                        <span className="text-xl font-semibold">Hybrid Teams</span>
+                        <span className="text-base opacity-70">
+          I enjoy the balance of hybrid work — combining focused individual effort with regular in-person collaboration.
+        </span>
+                    </div>
+
+                    <div className="flex flex-col gap-3">
+                        <span className="text-xl font-semibold">Office Environment</span>
+                        <span className="text-base opacity-70">
+          Working on-site helps build stronger team bonds and supports faster decision-making in fast-paced projects.
+        </span>
                     </div>
                 </div>
 
