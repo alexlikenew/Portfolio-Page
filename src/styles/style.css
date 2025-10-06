@@ -211,4 +211,14 @@ body {
   height: 64px;
 }
 
+.brush-bg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 3em;
+  background: url("/src/assets/img/brush-stroke-2.png") no-repeat center;
+  background-size: contain;
+  z-index: -1;
+}
+
 /*# sourceMappingURL=style.css.map */
