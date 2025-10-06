@@ -88,6 +88,9 @@
   padding-left: 0;
   padding-right: 0;
 }
+.container--1110 {
+  max-width: calc(1110px + 8vw);
+}
 
 button,
 .btn {
@@ -202,6 +205,10 @@ body {
   50% {
     opacity: 1;
   }
+}
+.icon-container svg {
+  width: 64px;
+  height: 64px;
 }
 
 /*# sourceMappingURL=style.css.map */

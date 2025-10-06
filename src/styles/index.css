@@ -1,68 +1,68 @@
 @import "tailwindcss";
 
-
-@theme base {
-	.font-sans {
+@theme  {
+	--font-sans {
 		font-family: 'Gilroy', sans-serif;
 		}
 
-	.text-sm {
+
+	--text-sm {
 		font-weight: 400;
 		font-size: 15px;
 		line-height: 26px;
 		letter-spacing: -0.1px;
 		}
 
-	.text-base {
+	--text-base {
 		font-weight: 400;
 		font-size: 17px;
 		line-height: 29px;
 		letter-spacing: -0.2px;
 		}
 
-	.text-lg {
+	--text-lg {
 		font-weight: 400;
 		font-size: 19px;
 		line-height: 32px;
 		letter-spacing: -0.2px;
 		}
 
-	.text-xl {
+	--text-xl {
 		font-weight: 700;
 		font-size: 21px;
 		line-height: 32px;
 		letter-spacing: -0.5px;
 		}
 
-	.text-2xl {
+	--text-2xl {
 		font-weight: 700;
 		font-size: 24px;
 		line-height: 34px;
 		letter-spacing: -0.5px;
 		}
 
-	.text-3xl {
+	--text-3xl {
 		font-weight: 700;
 		font-size: 32px;
 		line-height: 44px;
 		letter-spacing: -1.2px;
 		}
 
-	.text-4xl {
+	--text-4xl {
 		font-weight: 700;
 		font-size: 36px;
 		line-height: 48px;
 		letter-spacing: -1.2px;
 		}
 
-	.text-5xl {
+	--text-5xl {
 		font-weight: 700;
 		font-size: 48px;
 		line-height: 58px;
 		letter-spacing: -1.8px;
 		}
 
-	.text-6xl {
+	--text-6xl {
 		font-weight: 700;
 		font-size: 60px;
 		line-height: 65px;

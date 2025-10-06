@@ -20,19 +20,20 @@ function Hero(props) {
                     <div className="titles flex flex-col gap-6">
                      <span className="inline-flex items-center gap-3">
                       <span className="dot"></span>
-                      <span className="text-white opacity-65">Otwarty na współpracę i wspólny rozwój</span>
+                      <span className="text-white opacity-65">Open to collaborative research and development</span>
                     </span>
 
 
-                        <h1 className="text-6xl font-bold text-white uppercase">Twoja wizja, moje rozwiązania</h1>
+                        <h1 className="text-6xl font-bold text-white uppercase">Your vision.<br></br>My solutions.</h1>
                         <span className="text-lg opacity-65 text-white"
                         >
-                          Tworzę <span className="font-bold text-white">funkcjonalne</span> i <span className=" text-white font-bold">estetyczne</span> strony oraz aplikacje internetowe. Pomagam zespołom budować projekty szybko, sprawnie i bez zbędnego stresu.
+                        I build <span className="font-bold text-white">beautiful</span> and <span className="font-bold text-white">high-performing</span> websites and web apps.<br></br>
+                            Helping teams deliver projects faster, smoother, and stress-free.
                         </span>
                     </div>
                     <div className="flex gap-5">
                         <Button link="/linkedin" classes="btn btn-transparent mt-9 mb-14" >LinkedIn </Button>
-                        <Button link="/linkedin" classes="btn btn-transparent mt-9 mb-14" >Skontaktuj się <img className="" src={arrowRight} alt=""/></Button>
+                        <Button link="/linkedin" classes="btn btn-transparent mt-9 mb-14" >Contact <img className="" src={arrowRight} alt=""/></Button>
                     </div>
 
                 </div>
