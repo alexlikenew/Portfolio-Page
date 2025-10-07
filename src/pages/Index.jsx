@@ -5,6 +5,7 @@ import Collaborate from "../ui/Collaborate.jsx";
 import Skills from "../ui/Skills.jsx";
 import Tools from "../ui/Tools.jsx";
 import Experience from "../ui/Experience.jsx";
+import LatestArticles from "../ui/LatestArticles.jsx";
 
 function Index(props) {
     return (
@@ -15,6 +16,7 @@ function Index(props) {
             <Collaborate/>
             <Tools/>
             <Experience/>
+            <LatestArticles/>
         </>
     );
 }
