@@ -21,8 +21,8 @@ button,
   }
 
   svg, img {
-	width: 16px;
-	height: 16px;
+	width: 24px;
+	height: 24px;
 	transition: all .3s;
   }
 
@@ -64,16 +64,16 @@ button,
 }
 
 .btn-transparent {
-  background-color: transparent;
-  color: var(--color-white);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+
+
   transition: all 0.3s ease;
+  border: 1px solid grey;
   backdrop-filter: none;
 
   &:hover {
 	background-color: rgba(255, 255, 255, 0.1);
 	backdrop-filter: blur(8px);
-	border-color: rgba(255, 255, 255, 0.3);
+	border: 1px solid rgba(128, 128, 128, 0.35);
 	box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
   }
 

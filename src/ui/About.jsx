@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutImage from '../assets/img/about.jpg';
+import aboutImage from '../assets/img/about-me.jpg';
 function About() {
     return (
         <div className="w-full mt-40 mb-40" >
@@ -7,7 +7,7 @@ function About() {
                 <div className="w-full flex flex-col">
                     <h2 className="text-5xl font-bold relative inline-block  text-white">
                         About me
-                        <span className="brush-bg left-[-25%] w-full"></span>
+                        <span className="brush-bg left-[-25%] w-full h-[3em]"></span>
                     </h2>
 
                     {/*<p className="opacity-70 mt-4 mb-12">Software Engineer , Rzeszów Polska</p>*/}
@@ -21,7 +21,7 @@ function About() {
                     </div>
                 </div>
                 <div className="w-full flex justify-center items-center ">
-                    <img src={aboutImage} className="w-full h-full object-cover rounded-[50px] object-cover shadow-lg shadow-gray-700" alt=""/>
+                    <img src={aboutImage} className="w-full h-full object-cover"  alt=""/>
                 </div>
             </div>
         </div>
