@@ -3,7 +3,7 @@ import {NavLink} from "react-router";
 
 function Navigation(props) {
     return (
-        <div className="nav absolute top-0 left-0 w-full flex justify-center items-center">
+        <div className="nav z-1 absolute top-0 left-0 w-full flex justify-center items-center">
             <div className="container">
             <div className="navbar w-full flex flex-col gap-0">
                 <div className="navbar__top flex-row justify-between items-center pt-3 pb-3">
@@ -21,9 +21,14 @@ function Navigation(props) {
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="/kontakt">
-                                    <span>Kontakt </span>
+                                <NavLink to="/blog">
+                                    <span>Blog </span>
                                 </NavLink>
+                            </li>
+                            <li>
+                           <NavLink to="/contact">
+                               <span>Kontakt</span>
+                           </NavLink>
                             </li>
                         </ul>
                     </div>

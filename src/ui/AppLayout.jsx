@@ -7,7 +7,7 @@ function AppLayout() {
     return (
         <>
 
-        {/*<Navigation />*/}
+        <Navigation />
        <Outlet />
             <Footer/>
         </>

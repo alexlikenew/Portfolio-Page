@@ -9,6 +9,8 @@ import "./styles/index.css";
 
 // import SCSS (custom)
 import "./styles/style.css";
+import Blog from "./pages/Blog.jsx";
+import Contact from "./pages/Contact.jsx";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +20,8 @@ function App() {
     <Routes>
       <Route element={<AppLayout/>} >
         <Route index path="/" element={<Index/>} />
+        <Route path="/blog" element={<Blog/>} />
+        <Route path="/contact" element={<Contact/>} />
       </Route>
     </Routes>
   </BrowserRouter>
