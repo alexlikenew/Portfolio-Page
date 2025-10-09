@@ -3,8 +3,10 @@ import arrowRight from "../assets/icons/arrow.svg";
 import Button from "./Button.jsx";
 import {NavLink} from "react-router";
 import Follow from "./Follow.jsx";
+import {useArticles} from "../features/articles/useArticles.jsx";
 
 function Footer(props) {
+    let {data: articles, isPending, error} = useArticles();
     return (
         <div className="w-full pt-16 pb-8 bg-primary-200">
             <div className="container flex flex-col gap-16 justify-center items-center">
@@ -20,7 +22,7 @@ function Footer(props) {
                     <Button link="/contact" classes="btn btn-transparent ">Contact <img className="" src={arrowRight}
                                                                                         alt=""/></Button>
                 </div>
-                <div className="w-full flex flex-col pt-12 border-t-1 border-black">
+                <div className="w-full flex flex-col pt-12 border-t-1 border-secondary-300">
                     <div className=" grid grid-cols-5 ">
                         <div className="flex flex-col ">
                             <h3 className="text-lg font-bold mb-4">Home</h3>
@@ -32,6 +34,21 @@ function Footer(props) {
                             </NavLink>
                             <NavLink className="mb-2" to="/blog"><span>Blog</span></NavLink>
                             <NavLink className="mb-2" to="/contact"><span>Contact</span></NavLink>
+                        </div>
+                        <div className="flex flex-col">
+                            <h3 className="text-lg font-bold mb-4">Blog</h3>
+
+                            {isPending ?
+                                <div className="flex justify-center items-center">
+                                    <div className="loader"></div>
+                                </div> : articles.slice(0, 3).map((article) => (
+                                    <NavLink className="mb-2" to={`/blog/${article.url}`} title={article.title}>
+                                        <span>  {article.title.length > 30
+                                            ? article.title.slice(0, 26) + '...'
+                                            : article.title}</span>
+                                    </NavLink>
+                                ))
+                            }
                         </div>
                         <div className="flex flex-col ">
                             <h3 className="text-lg font-bold mb-4">Contact</h3>
