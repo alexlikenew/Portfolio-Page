@@ -9,6 +9,10 @@
   --color-secondary-100: #F1F1F0; /* jaśniejszy odcień */
   --color-secondary-200: #DBDCDA; /* bazowy */
   --color-secondary-300: #BEBFBD; /* ciemniejszy odcień */
+  --color-tertiary: #024BCC; /* kolor akcentowy (np. przyciski, linki) */
+  --color-tertiary-100: #4D7FFF; /* jaśniejszy odcień */
+  --color-tertiary-200: #024BCC; /* bazowy */
+  --color-tertiary-300: #013B9F; /* ciemniejszy odcień */
 }
 
 /* Tekst */
@@ -44,6 +48,22 @@
   color: var(--color-secondary-300);
 }
 
+.text-tertiary {
+  color: var(--color-tertiary);
+}
+
+.text-tertiary-100 {
+  color: var(--color-tertiary-100);
+}
+
+.text-tertiary-200 {
+  color: var(--color-tertiary-200);
+}
+
+.text-tertiary-300 {
+  color: var(--color-tertiary-300);
+}
+
 /* Tła */
 .bg-primary {
   background-color: var(--color-primary);
@@ -75,6 +95,22 @@
 
 .bg-secondary-300 {
   background-color: var(--color-secondary-300);
+}
+
+.bg-tertiary {
+  background-color: var(--color-tertiary);
+}
+
+.bg-tertiary-100 {
+  background-color: var(--color-tertiary-100);
+}
+
+.bg-tertiary-200 {
+  background-color: var(--color-tertiary-200);
+}
+
+.bg-tertiary-300 {
+  background-color: var(--color-tertiary-300);
 }
 
 .container {
@@ -138,12 +174,13 @@ button:disabled, button.disabled,
 }
 
 .btn-secondary {
-  background-color: var(--color-secondary-200);
-  color: var(--color-white);
-  border: 1px solid var(--color-secondary-300);
+  background-color: transparent;
+  color: var(--color-tertiary-200);
+  border: 1px solid var(--color-tertiary-200);
 }
 .btn-secondary:hover {
-  background-color: var(--color-secondary-100);
+  background-color: var(--color-tertiary-200);
+  color: var(--color-white);
 }
 .btn-secondary:active {
   background-color: var(--color-secondary-300);
@@ -164,6 +201,23 @@ button:disabled, button.disabled,
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(12px);
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+.btn-tertiary {
+  background-color: var(--color-tertiary-200);
+  color: var(--color-white);
+  border: 1px solid var(--color-tertiary-300);
+  transition: all 0.3s ease;
+}
+.btn-tertiary:hover {
+  background-color: var(--color-tertiary-100);
+}
+.btn-tertiary:active {
+  background-color: var(--color-tertiary-300);
+}
+.btn-tertiary:disabled, .btn-tertiary.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
 }
 
 @font-face {
@@ -216,6 +270,52 @@ body {
   background: url("/src/assets/img/brush-stroke-2.png") no-repeat center;
   background-size: contain;
   z-index: -1;
+}
+
+.cookies {
+  position: fixed;
+  bottom: 50px;
+  right: -370px;
+  max-width: 345px;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px 25px 22px;
+  transition: right 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.cookies header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.cookies .data {
+  margin-top: 16px;
+}
+.cookies .data p {
+  color: #333;
+  font-size: 16px;
+}
+.cookies .data p a {
+  color: var(--color-tertiary);
+  text-decoration: none;
+}
+.cookies .data p a:hover {
+  text-decoration: underline;
+}
+.cookies .buttons {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cookies .buttons .btn {
+  width: calc(50% - 10px);
+}
+
+.cookies.show {
+  right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

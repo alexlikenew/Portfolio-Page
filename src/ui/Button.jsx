@@ -1,8 +1,11 @@
 import React from 'react';
 
-function Button({classes , children , link}) {
+function Button({classes, children, link, id, onClick}) {
     return (
-        <a title={link} href={link} className={classes}>{children}</a>
+        <>
+            {link ? <a title={link} href={link} className={classes}>{children}</a> :
+                <button onClick={onClick} id={id ? `${id}` : ''} className={classes}>{children}</button>}
+        </>
     );
 }
 

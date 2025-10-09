@@ -41,6 +41,16 @@ import heroBg from './hero-bg.png';
 import slowmo from './slowmo.jpg';
 import education from './education.png';
 
+import linkedinIcon from './social/social-8.png';
+import gitlabIcon from './social/social-1.png';
+import githubIcon from './social/social-3.png';
+import facebookIcon from './social/social.png';
+import telegramIcon from './social/social-4.png';
+import instagramIcon from './social/social-6.png';
+
+
+
+
 export {
     about,
     aboutMe,
@@ -53,4 +63,11 @@ export {
     heroBg,
     slowmo,
     education,
+    linkedinIcon,
+    gitlabIcon,
+    githubIcon,
+    facebookIcon,
+    telegramIcon,
+    instagramIcon,
+
 };

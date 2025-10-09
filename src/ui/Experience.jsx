@@ -5,12 +5,11 @@ import aboutImage from "../assets/img/about-me.jpg";
 
 function Experience(props) {
     return (
-        <div className="w-full justify-center pt-70 pb-40 relative">
+        <div className="w-full justify-center pt-60 pb-60 relative">
             <div className="absolute w-full h-full top-0 left-0 -z-1  ">
-                <img src={experienceBackground} className="w-full h-full object-cover object-top" alt=""/>
+                <img src={experienceBackground} className="w-full h-full " alt=""/>
             </div>
             <div className="container flex flex-col">
-
                 <div className="flex items-center flex-col ">
                     <h2 className="text-5xl font-bold relative inline-block mb-18  text-white">Experience
                         <span className="brush-bg left-[-16%] w-[141%] h-[3.3em]"></span></h2>
@@ -20,7 +19,7 @@ function Experience(props) {
                 </div>
             </div>
 
-            <div className="container container--1110 grid grid-cols-2 gap-36 mt-40">
+            <div className="container container--1110 grid grid-cols-2 gap-36 mt-50">
                 <div className="w-full flex flex-col">
                     <h2 className="text-5xl font-bold relative inline-block  text-white mb-18">
                         Education

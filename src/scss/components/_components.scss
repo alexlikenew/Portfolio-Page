@@ -1,5 +1,5 @@
-.icon-container{
-  svg{
+.icon-container {
+  svg {
 	width: 64px;
 	height: 64px;
   }
@@ -10,9 +10,62 @@
   top: 50%;
   transform: translateY(-50%);
 
-
   background: url('/src/assets/img/brush-stroke-2.png') no-repeat center;
   background-size: contain;
   z-index: -1;
+}
+
+.cookies {
+  position: fixed;
+  bottom: 50px;
+  right: -370px;
+  max-width: 345px;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px 25px 22px;
+  transition: right 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+  header {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+  }
+
+  .data {
+	margin-top: 16px;
+
+	p {
+	  color: #333;
+	  font-size: 16px;
+
+	  a {
+		color: var(--color-tertiary);
+		text-decoration: none;
+
+		&:hover {
+		  text-decoration: underline;
+		}
+	  }
+	}
+  }
+
+  .buttons {
+	margin-top: 16px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	.btn {
+	  width: calc(100% / 2 - 10px);
+	}
+
+  }
+}
+
+.cookies.show {
+  right: 20px;
 }
 
