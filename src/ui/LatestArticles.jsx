@@ -55,11 +55,13 @@ function LatestArticles(props) {
                 </div>
                 {isPending ? <div className="flex justify-center">Loading...</div> :
                     <div className="w-full grid-cols-3 grid gap-8">
-                        {articles.map(article => <ArticleCard title={article.title} category={article.category}
+                        {articles.map(article => <ArticleCard key={article.url} title={article.title}
+                                                              category={article.category}
                                                               readingTime={article.readingTime}
                                                               content={article.content}
                                                               url={article.url} author={article.author}
-                                                              createdDate={article.createdDate}/>)}
+                                                              createdDate={article.createdDate}
+                                                              image={article.image_url}/>)}
 
                     </div>}
 

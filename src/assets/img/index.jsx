@@ -41,6 +41,13 @@ import heroBg from './hero-bg.png';
 import slowmo from './slowmo.jpg';
 import education from './education.png';
 import authorImage from './author-image.jpg';
+import netiImage from './neti-logo.svg';
+import splentumImage from './splentum.jpg';
+import argoniumImage from './argonium.jpg'
+
+import hybridWorkImage from './hybrid-work.png'
+import remoteWorkImage from './work-from-home.png'
+import officeWork from './office.png'
 
 import linkedinIcon from './social/social-8.png';
 import gitlabIcon from './social/social-1.png';
@@ -63,6 +70,12 @@ export {
     slowmo,
     education,
     authorImage,
+    netiImage,
+    splentumImage,
+    argoniumImage,
+    hybridWorkImage,
+    remoteWorkImage,
+    officeWork,
     linkedinIcon,
     gitlabIcon,
     githubIcon,
