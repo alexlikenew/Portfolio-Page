@@ -6,7 +6,7 @@ import Follow from "./Follow.jsx";
 
 function Footer(props) {
     return (
-        <div className="w-full pt-16 pb-12 bg-primary-200">
+        <div className="w-full pt-16 pb-8 bg-primary-200">
             <div className="container flex flex-col gap-16 justify-center items-center">
                 <div
                     className="w-full flex justify-center items-center flex-col gap-4 max-w-1/2 text-center text-balance ">
@@ -20,7 +20,7 @@ function Footer(props) {
                     <Button link="/contact" classes="btn btn-transparent ">Contact <img className="" src={arrowRight}
                                                                                         alt=""/></Button>
                 </div>
-                <div className="w-full flex flex-col pt-16 border-t-1 border-black">
+                <div className="w-full flex flex-col pt-12 border-t-1 border-black">
                     <div className=" grid grid-cols-5 ">
                         <div className="flex flex-col ">
                             <h3 className="text-lg font-bold mb-4">Home</h3>
@@ -74,7 +74,7 @@ function Footer(props) {
                         </div>
                     </div>
                     <Follow classes={"bg-secondary-100"}/>
-                    <div className="flex justify-between mt-16 ">
+                    <div className="flex justify-between mt-12 ">
                         <div>© {new Date().getFullYear()} All Rights Reserved</div>
                         <ul className="flex flex-row list-none gap-4 ">
                             <li>
