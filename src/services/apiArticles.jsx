@@ -13,6 +13,7 @@ export async function getArticleById(url) {
         .select('*')
         .eq('url', url)
         .single()
+    console.log(data)
     return data
 }
 

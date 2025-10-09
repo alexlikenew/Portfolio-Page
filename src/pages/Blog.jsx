@@ -1,8 +1,11 @@
 import React from 'react';
+import LatestArticles from "../ui/LatestArticles.jsx";
 
 function Blog(props) {
     return (
-        <div></div>
+        <>
+            <LatestArticles/>
+        </>
     );
 }
 
