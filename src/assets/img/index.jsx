@@ -1,4 +1,5 @@
 // --- Brushes ---
+
 import brush1 from './brushes/blue-paint-brush-stroke-1.png?webp&format=webp';
 import brush2 from './brushes/blue-paint-brush-stroke-2.png?webp&format=webp';
 import brush3 from './brushes/blue-paint-brush-stroke-3.png?webp&format=webp';
