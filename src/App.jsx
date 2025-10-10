@@ -5,7 +5,7 @@ import {BrowserRouter, Route, Routes} from "react-router";
 import AppLayout from "./ui/AppLayout.jsx";
 import Index from "./pages/Index.jsx";
 // import Tailwind (musi być pierwszy!)
-
+import SpeedInsights from "@vercel/speed-insights/astro"
 import "./styles/index.css";
 
 // import SCSS (custom)
@@ -22,6 +22,7 @@ function App() {
 
     return (
         <QueryClientProvider client={queryClient}>
+            <SpeedInsights/>
             <BrowserRouter>
                 <Routes>
                     <Route element={<AppLayout/>}>

@@ -31,7 +31,7 @@ function Contact(props) {
     return (
         <section className="w-full h-screen relative">
             <img src={slowmo} className="absolute w-full h-full t-0 b-0 left-0 right-0" alt=""/>
-            <div className="container flex flex-col gap-8 pt-30">
+            <div className="container flex flex-col gap-8 pt-40">
                 <div>
                     <h1 className="text-5xl font-bold relative inline-block  ">Fill the form.<br></br>It`s easy.
                     </h1>
@@ -41,10 +41,9 @@ function Contact(props) {
 
                     <div className="pr-16 flex flex-col gap-10">
                         <div className="flex flex-col gap-4">
-                            <h2 className="text-3xl">
-                                Let`s talk about<br></br>everything.
-                            </h2>
-                            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur debitis dicta ipsam iusto, laudantium libero reiciendis? Aspernatur assumenda dolor doloribus ea laboriosam magnam molestiae, odit quidem quisquam saepe sapiente sit!</span>
+
+                            <p>Have a question or idea? Just fill out the form or connect with me through the ‘Follow
+                                Me’ links below—I’d love to hear from you!
                             </p>
                         </div>
                         <form
