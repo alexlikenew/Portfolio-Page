@@ -14,6 +14,7 @@ import Blog from "./pages/Blog.jsx";
 import Contact from "./pages/Contact.jsx";
 import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
 import BlogPage from "./pages/BlogPage.jsx";
+import FAQ from "./pages/FAQ.jsx";
 
 function App() {
     const [count, setCount] = useState(0)
@@ -25,6 +26,7 @@ function App() {
                 <Routes>
                     <Route element={<AppLayout/>}>
                         <Route index path="/" element={<Index/>}/>
+                        <Route path="/faq" element={<FAQ/>}/>
                         <Route path="/blog" element={<Blog/>}/>
                         <Route path="/blog/:url" element={<BlogPage/>}/>
                         <Route path="/contact" element={<Contact/>}/>

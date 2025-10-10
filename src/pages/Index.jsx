@@ -6,17 +6,19 @@ import Skills from "../ui/Skills.jsx";
 import Tools from "../ui/Tools.jsx";
 import Experience from "../ui/Experience.jsx";
 import LatestArticles from "../ui/LatestArticles.jsx";
+import FAQ from "../ui/FAQ.jsx";
 
 function Index(props) {
     return (
         <>
-        <Hero/>
+            <Hero/>
             <About/>
             <Skills/>
             <Collaborate/>
             <Tools/>
             <Experience/>
             <LatestArticles/>
+            <FAQ/>
         </>
     );
 }

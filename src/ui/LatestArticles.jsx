@@ -9,7 +9,7 @@ function LatestArticles(props) {
     let {data: articles, isPending, error} = useArticles();
 
     return (
-        <div className="w-full mt-50 mb-50">
+        <div className="w-full mt-40 mb-50">
             <div className="container flex justify-center flex-col gap-10">
                 <div className="flex items-center flex-col ">
                     <h2 className="text-5xl font-bold relative inline-block mb-18  text-white">Articles

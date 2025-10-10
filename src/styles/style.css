@@ -176,6 +176,9 @@
 .container--1110 {
   max-width: calc(1110px + 8vw);
 }
+.container--768 {
+  max-width: calc(768px + 8vw);
+}
 
 button,
 .btn {

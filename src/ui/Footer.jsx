@@ -30,9 +30,12 @@ function Footer(props) {
                                 <span>Home</span>
                             </NavLink>
                             <NavLink className="mb-2" to="/about">
-                                
+
                                 <span>About me</span>
-                            </NavLink>
+                            </NavLink> <NavLink className="mb-2" to="/faq">
+
+                            <span>FAQ</span>
+                        </NavLink>
                             <NavLink className="mb-2" to="/blog"><span>Blog</span></NavLink>
                             <NavLink className="mb-2" to="/contact"><span>Contact</span></NavLink>
                         </div>
