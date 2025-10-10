@@ -4,13 +4,15 @@ import Button from "./Button.jsx";
 import {useTruncateText} from "../utils/Trancate.jsx";
 import {aboutMe, authorImage} from '../assets/img/index.jsx';
 
-function ArticleCard({title, category, readingTime, content, url, createdDate, author, image}) {
+function ArticleCard({article}) {
+    const {title, category, readingTime, content, url, createdDate, author, image_url} = article;
+    console.log(article)
     const shortTitle = useTruncateText(title, 50)
     const shortContent = useTruncateText(content, 150)
     return (
         <NavLink className="flex w-full flex-col gap-4" to={`/blog/${url}`} title={title}>
             <div className="flex w-full">
-                <img className="w-full h-auto max-h-80 object-cover" src={image} alt=""/>
+                <img className="w-full h-auto max-h-80 object-cover" src={image_url} alt=""/>
             </div>
             <div className="flex flex-col gap-3">
                 <div className="flex gap-3 items-center">

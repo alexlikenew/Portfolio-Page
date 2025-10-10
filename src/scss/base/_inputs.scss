@@ -1,0 +1,78 @@
+input,
+textarea,
+select {
+  height: 48px;
+  border-bottom: 1px solid var(--color-secondary-200);
+  padding: 12px;
+  width: 100%;
+  display: block;
+
+  &::placeholder {
+	color: black;
+  }
+
+  &:focus-visible {
+	outline: none;
+	border-color: var(--color-tertiary-200);
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+  }
+
+  &.input-small {
+	height: 40px;
+	padding: 8px;
+  }
+
+  &:disabled {
+	border: none;
+  }
+
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  accent-color: var(---color-tertiary-200);
+
+}
+
+input[type="file"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+textarea {
+  height: auto;
+  resize: none;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  &:has(input[type="checkbox"]) {
+	flex-direction: row;
+	gap: 8px;
+  }
+}
+
+
+

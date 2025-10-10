@@ -32,6 +32,7 @@ export const brushes = [
 import about from './about.jpg';
 import aboutMe from './about-me.jpg';
 import aboutWide from './about-wide.jpg';
+import contactPage from './contact-page.png';
 import brushStroke from './brush-stroke.jpg';
 import brushStroke1 from './brush-stroke.png';
 import brushStroke2 from './brush-stroke-2.png';
@@ -61,6 +62,7 @@ export {
     about,
     aboutMe,
     aboutWide,
+    contactPage,
     brushStroke,
     brushStroke1,
     brushStroke2,

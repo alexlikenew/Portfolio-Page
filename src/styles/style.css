@@ -269,6 +269,85 @@ button:disabled, button.disabled,
   opacity: 0.6;
 }
 
+input,
+textarea,
+select {
+  height: 48px;
+  border-bottom: 1px solid var(--color-secondary-200);
+  padding: 12px;
+  width: 100%;
+  display: block;
+}
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+  color: black;
+}
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: none;
+  border-color: var(--color-tertiary-200);
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button,
+textarea::-webkit-outer-spin-button,
+textarea::-webkit-inner-spin-button,
+select::-webkit-outer-spin-button,
+select::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input.input-small,
+textarea.input-small,
+select.input-small {
+  height: 40px;
+  padding: 8px;
+}
+input:disabled,
+textarea:disabled,
+select:disabled {
+  border: none;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  accent-color: var(---color-tertiary-200);
+}
+
+input[type=file] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+textarea {
+  height: auto;
+  resize: none;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+label:has(input[type=checkbox]) {
+  flex-direction: row;
+  gap: 8px;
+}
+
 @font-face {
   font-family: "Gilroy";
   src: url("/src/assets/fonts/Gilroy-Regular.woff2") format("woff2");
