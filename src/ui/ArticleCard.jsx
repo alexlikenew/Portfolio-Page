@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {NavLink} from "react-router";
 import Button from "./Button.jsx";
 import {useTruncateText} from "../utils/Trancate.jsx";
@@ -9,6 +9,60 @@ function ArticleCard({article}) {
     console.log(article)
     const shortTitle = useTruncateText(title, 50)
     const shortContent = useTruncateText(content, 150)
+
+
+    useEffect(() => {
+        const articleSchema = {
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": title,
+            "alternativeHeadline": shortTitle,
+            "image": [image_url],
+            "author": {
+                "@type": "Person",
+                "name": author,
+                "url": "https://alexlikenew.pl/"
+            },
+            "editor": author,
+            "genre": category,
+            "keywords": `${category}, frontend, react, javascript, blog, web development, programming`,
+            "wordcount": content.split(' ').length,
+            "publisher": {
+                "@type": "Organization",
+                "name": "AlexLikeNew",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://alexlikenew.pl/favicon-32x32.png"
+                }
+            },
+            "url": `https://alexlikenew.pl/blog/${url}`,
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": `https://alexlikenew.pl/blog/${url}`
+            },
+            "datePublished": createdDate,
+            "dateModified": createdDate,
+            "description": shortContent,
+            "articleBody": content,
+            "inLanguage": "en",
+        };
+
+
+        const existingScript = document.getElementById(`article-json-ld-${url}`);
+        if (existingScript) existingScript.remove();
+
+    
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.id = `article-json-ld-${url}`;
+        script.text = JSON.stringify(articleSchema);
+        document.head.appendChild(script);
+
+        return () => {
+            const el = document.getElementById(`article-json-ld-${url}`);
+            if (el) el.remove();
+        };
+    }, [article]);
     return (
         <NavLink className="flex w-full flex-col gap-4" to={`/blog/${url}`} title={title}>
             <div className="flex w-full">

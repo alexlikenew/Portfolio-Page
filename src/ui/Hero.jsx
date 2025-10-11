@@ -1,13 +1,13 @@
 import React from 'react';
-import heroBg from '../assets/img/about-wide.jpg';
 import arrowRight from '../assets/icons/arrow.svg';
 import Button from "./Button.jsx";
+import {aboutWide} from "../assets/img/index.jsx";
 
 function Hero(props) {
     return (
         <div className="w-full h-screen flex justify-center items-center relative ">
             <div className="absolute w-full h-full top-0 left-0 -z-1  ">
-                <img src={heroBg} className="w-full h-full object-cover " alt=""/>
+                <img src={aboutWide} className="w-full h-full object-cover " alt=""/>
             </div>
 
             <div className="container grid grid-cols-2 gap-20">
@@ -22,13 +22,16 @@ function Hero(props) {
                         <h1 className="text-6xl font-bold  uppercase">Your vision.<br></br>My solutions.</h1>
                         <span className="text-lg opacity-65 "
                         >
-                        I build <span className="font-bold ">beautiful</span> and <span className="font-bold ">high-performing</span> websites and web apps.<br></br>
+                        I build <span className="font-bold ">beautiful</span> and <span
+                            className="font-bold ">high-performing</span> websites and web apps.<br></br>
                             Helping teams deliver projects faster, smoother, and stress-free.
                         </span>
                     </div>
                     <div className="flex gap-5">
-                        <Button link="/linkedin" classes="btn btn-transparent mt-9 mb-14" >LinkedIn </Button>
-                        <Button link="/linkedin" classes="btn btn-transparent mt-9 mb-14" >Contact <img className="" src={arrowRight} alt=""/></Button>
+                        <Button link="/linkedin" classes="btn btn-transparent mt-9 mb-14">LinkedIn </Button>
+                        <Button link="/linkedin" classes="btn btn-transparent mt-9 mb-14">Contact <img className=""
+                                                                                                       src={arrowRight}
+                                                                                                       alt=""/></Button>
                     </div>
 
                 </div>

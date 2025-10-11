@@ -1,27 +1,27 @@
 // --- Brushes ---
 
-import brush1 from './brushes/blue-paint-brush-stroke-1.png?webp&format=webp';
-import brush2 from './brushes/blue-paint-brush-stroke-2.png?webp&format=webp';
-import brush3 from './brushes/blue-paint-brush-stroke-3.png?webp&format=webp';
-import brush4 from './brushes/blue-paint-brush-stroke-4.png?webp&format=webp';
-import brush5 from './brushes/blue-paint-brush-stroke-5.png?webp&format=webp';
-import brush6 from './brushes/blue-paint-brush-stroke-6.png?webp&format=webp';
-import brush7 from './brushes/blue-paint-brush-stroke-7.png?webp&format=webp';
-import brush8 from './brushes/blue-paint-brush-stroke-8.png?webp&format=webp';
-import brush9 from './brushes/blue-paint-brush-stroke-9.png?webp&format=webp';
-import brush10 from './brushes/blue-paint-brush-stroke-10.png?webp&format=webp';
-import brush11 from './brushes/blue-paint-brush-stroke-11.png?webp&format=webp';
-import brush12 from './brushes/blue-paint-brush-stroke-12.png?webp&format=webp';
-import brush13 from './brushes/blue-paint-brush-stroke-13.png?webp&format=webp';
-import brush14 from './brushes/blue-paint-brush-stroke-14.png?webp&format=webp';
-import brush15 from './brushes/blue-paint-brush-stroke-15.png?webp&format=webp';
-import brush16 from './brushes/blue-paint-brush-stroke-16.png?webp&format=webp';
-import brush17 from './brushes/blue-paint-brush-stroke-17.png?webp&format=webp';
-import brush18 from './brushes/blue-paint-brush-stroke-18.png?webp&format=webp';
-import brush19 from './brushes/blue-paint-brush-stroke-19.png?webp&format=webp';
-import brush20 from './brushes/blue-paint-brush-stroke-20.png?webp&format=webp';
-import brush21 from './brushes/blue-paint-brush-stroke-21.png?webp&format=webp';
-import brush22 from './brushes/blue-paint-brush-stroke-22.png?webp&format=webp';
+import brush1 from './brushes/blue-paint-brush-stroke-1.png';
+import brush2 from './brushes/blue-paint-brush-stroke-2.png';
+import brush3 from './brushes/blue-paint-brush-stroke-3.png';
+import brush4 from './brushes/blue-paint-brush-stroke-4.png';
+import brush5 from './brushes/blue-paint-brush-stroke-5.png';
+import brush6 from './brushes/blue-paint-brush-stroke-6.png';
+import brush7 from './brushes/blue-paint-brush-stroke-7.png';
+import brush8 from './brushes/blue-paint-brush-stroke-8.png';
+import brush9 from './brushes/blue-paint-brush-stroke-9.png';
+import brush10 from './brushes/blue-paint-brush-stroke-10.png';
+import brush11 from './brushes/blue-paint-brush-stroke-11.png';
+import brush12 from './brushes/blue-paint-brush-stroke-12.png';
+import brush13 from './brushes/blue-paint-brush-stroke-13.png';
+import brush14 from './brushes/blue-paint-brush-stroke-14.png';
+import brush15 from './brushes/blue-paint-brush-stroke-15.png';
+import brush16 from './brushes/blue-paint-brush-stroke-16.png';
+import brush17 from './brushes/blue-paint-brush-stroke-17.png';
+import brush18 from './brushes/blue-paint-brush-stroke-18.png';
+import brush19 from './brushes/blue-paint-brush-stroke-19.png';
+import brush20 from './brushes/blue-paint-brush-stroke-20.png';
+import brush21 from './brushes/blue-paint-brush-stroke-21.png';
+import brush22 from './brushes/blue-paint-brush-stroke-22.png';
 
 
 export const brushes = [
@@ -31,45 +31,39 @@ export const brushes = [
 ];
 
 // --- Other images ---
-import about from './about.jpg?webp&format=webp';
-import aboutMe from './about-me.jpg?webp&format=webp';
-import aboutWide from './about-wide.jpg?webp&format=webp';
-import contactPage from './contact-page.png?webp&format=webp';
-import brushStroke from './brush-stroke.jpg?webp&format=webp';
-import brushStroke1 from './brush-stroke.png?webp&format=webp';
-import brushStroke2 from './brush-stroke-2.png?webp&format=webp';
-import collaborate from './collaborate.png?webp&format=webp';
-import experienceBg from './experience-background.png?webp&format=webp';
-import heroBg from './hero-bg.png?webp&format=webp';
-import slowmo from './slowmo.jpg?webp&format=webp';
-import education from './education.png?webp&format=webp';
-import authorImage from './author-image.jpg?webp&format=webp';
-import netiImage from './neti-logo.svg?webp&format=webp';
-import splentumImage from './splentum.jpg?webp&format=webp';
-import argoniumImage from './argonium.jpg?webp&format=webp';
+import about from './about.webp';
+import aboutMe from './about-me.webp';
+import aboutWide from './about-wide.webp';
+import authorImage from './author-image.webp';
 
-import hybridWorkImage from './hybrid-work.png?webp&format=webp';
-import remoteWorkImage from './work-from-home.png?webp&format=webp';
-import officeWork from './office.png?webp&format=webp';
+import contactPage from './contact-page.png';
 
-import linkedinIcon from './social/social-8.png?webp&format=webp';
-import gitlabIcon from './social/social-1.png?webp&format=webp';
-import githubIcon from './social/social-3.png?webp&format=webp';
-import facebookIcon from './social/social.png?webp&format=webp';
-import telegramIcon from './social/social-4.png?webp&format=webp';
-import instagramIcon from './social/social-6.png?webp&format=webp';
+import collaborate from './collaborate.png';
+import experienceBg from './experience-background.webp';
+import slowmo from './slowmo.webp';
+import education from './education.png';
+import netiImage from './neti-logo.svg';
+import splentumImage from './splentum.jpg';
+import argoniumImage from './argonium.jpg';
+
+import hybridWorkImage from './hybrid-work.png';
+import remoteWorkImage from './work-from-home.png';
+import officeWork from './office.png';
+
+import linkedinIcon from './social/social-8.png';
+import gitlabIcon from './social/social-1.png';
+import githubIcon from './social/social-3.png';
+import facebookIcon from './social/social.png';
+import telegramIcon from './social/social-4.png';
+import instagramIcon from './social/social-6.png';
 
 export {
     about,
     aboutMe,
     aboutWide,
     contactPage,
-    brushStroke,
-    brushStroke1,
-    brushStroke2,
     collaborate,
     experienceBg,
-    heroBg,
     slowmo,
     education,
     authorImage,

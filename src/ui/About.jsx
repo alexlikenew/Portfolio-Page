@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutImage from '../assets/img/about-me.jpg';
+import {aboutMe} from "../assets/img/index.jsx";
 
 function About() {
     return (
@@ -28,7 +28,7 @@ function About() {
                     </div>
                 </div>
                 <div className="w-full flex justify-center items-center ">
-                    <img src={aboutImage} className="w-full h-full object-cover" alt=""/>
+                    <img src={aboutMe} className="w-full h-full object-cover" alt=""/>
                 </div>
             </div>
         </div>

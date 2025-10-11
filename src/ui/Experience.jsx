@@ -1,13 +1,12 @@
 import React from 'react';
-import experienceBackground from '../assets/img/experience-background.png';
-import {argoniumImage, education, netiImage, splentumImage} from "../assets/img/index.jsx";
-import aboutImage from "../assets/img/about-me.jpg";
+import {argoniumImage, education, experienceBg, netiImage, splentumImage} from "../assets/img/index.jsx";
+
 
 function Experience(props) {
     return (
         <div className="w-full justify-center pt-60 pb-60 relative">
             <div className="absolute w-full h-full top-0 left-0 -z-1  ">
-                <img src={experienceBackground} className="w-full h-full " alt=""/>
+                <img src={experienceBg} className="w-full h-full " alt=""/>
             </div>
             <div className="container container--1110 flex flex-col">
                 <div className="flex items-center flex-col ">

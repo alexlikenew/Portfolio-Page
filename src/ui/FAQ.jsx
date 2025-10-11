@@ -1,5 +1,4 @@
-import React, {useState} from 'react';
-import aboutImage from "../assets/img/about-me.jpg";
+import React, {useEffect, useState} from 'react';
 import {useForm} from "react-hook-form";
 import {chevronDown} from "../assets/icons/index.jsx";
 
@@ -48,8 +47,38 @@ function Faq(props) {
 
     function handleAnswer(id) {
         showAnswer === id ? setShowAnswer('') : setShowAnswer(id);
-
     }
+
+    useEffect(() => {
+        const faqSchema = {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqData.map(item => ({
+                "@type": "Question",
+                "name": item.question,
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": item.answer
+                }
+            }))
+        };
+
+        const existingScript = document.getElementById("faq-json-ld");
+        if (existingScript) existingScript.remove();
+
+        const script = document.createElement("script");
+        script.type = "application/ld+json";
+        script.id = "faq-json-ld";
+        script.text = JSON.stringify(faqSchema);
+        document.head.appendChild(script);
+
+
+        return () => {
+            if (document.getElementById("faq-json-ld")) {
+                document.getElementById("faq-json-ld").remove();
+            }
+        };
+    }, []);
 
     return (
         <div className="w-full mt-40 mb-30">
