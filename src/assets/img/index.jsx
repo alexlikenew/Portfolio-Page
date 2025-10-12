@@ -35,9 +35,7 @@ import about from './about.webp';
 import aboutMe from './about-me.webp';
 import aboutWide from './about-wide.webp';
 import authorImage from './author-image.webp';
-
 import contactPage from './contact-page.png';
-
 import collaborate from './collaborate.png';
 import experienceBg from './experience-background.webp';
 import slowmo from './slowmo.webp';
@@ -45,6 +43,9 @@ import education from './education.png';
 import netiImage from './neti-logo.svg';
 import splentumImage from './splentum.jpg';
 import argoniumImage from './argonium.jpg';
+import logoSvg from './logo.svg';
+import logoPng from './logo.png';
+import logoWebp from './logo.webp';
 
 import hybridWorkImage from './hybrid-work.png';
 import remoteWorkImage from './work-from-home.png';
@@ -79,4 +80,7 @@ export {
     facebookIcon,
     telegramIcon,
     instagramIcon,
+    logoSvg,
+    logoPng,
+    logoWebp
 };

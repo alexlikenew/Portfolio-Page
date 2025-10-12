@@ -4,6 +4,7 @@ import Button from "./Button.jsx";
 import {NavLink} from "react-router";
 import Follow from "./Follow.jsx";
 import {useArticles} from "../features/articles/useArticles.jsx";
+import {logoSvg, logoWebp} from "../assets/img/index.jsx";
 
 function Footer(props) {
     let {data: articles, isPending, error} = useArticles();
@@ -45,7 +46,7 @@ function Footer(props) {
                             {isPending ?
                                 <div className="flex justify-center items-center">
                                     <div className="loader"></div>
-                                </div> : articles.slice(0, 3).map((article) => (
+                                </div> : articles.slice(0, 5).map((article) => (
                                     <NavLink className="mb-2" to={`/blog/${article.url}`} title={article.title}>
                                         <span>  {article.title.length > 30
                                             ? article.title.slice(0, 26) + '...'
@@ -78,7 +79,7 @@ function Footer(props) {
                                     Rzeszów, Poland
                                 </span>
                             </div>
-                            <div className="flex gap-3 align-center">
+                            <div className="flex gap-3 align-center mb-2">
                                 <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -91,6 +92,9 @@ function Footer(props) {
                                 <a href="mailto:alexlikenew.dev@gmail.com" title="alexlikenew.dev@gmail.com">
                                     alexlikenew.dev@gmail.com
                                 </a>
+                            </div>
+                            <div>
+                                <img className="max-w-36" src={logoWebp} alt=""/>
                             </div>
                         </div>
                     </div>

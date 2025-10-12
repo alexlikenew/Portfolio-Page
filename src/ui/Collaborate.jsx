@@ -8,7 +8,8 @@ function Collaborate(props) {
         <div className="w-full mt-40 mb-40">
             <div className="container container--1110 grid grid-cols-2 gap-36">
                 <div className="w-full flex justify-center items-center">
-                    <img src={collaborateImage} className="w-full h-full object-cover" alt=""/>
+                    <img loading="lazy" src={collaborateImage} className="w-full h-full object-cover"
+                         alt="Team in which i working "/>
                 </div>
                 <div className="w-full flex flex-col">
                     <h2 className="text-5xl font-bold">How I Work</h2>

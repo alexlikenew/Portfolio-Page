@@ -24,7 +24,8 @@ function BlogPage(props) {
                             </div>
 
                         </div>
-                        <img className="w-full" src={article.image_url} alt=""/>
+                        <img loading="lazy" className="w-full" src={article.image_url} alt={article.title}
+                             title={article.title}/>
 
                     </header>
                     <div className="grid grid-cols-[70%_25%] justify-between">

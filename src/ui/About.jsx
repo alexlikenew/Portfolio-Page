@@ -8,6 +8,7 @@ function About() {
                 <div className="w-full flex flex-col">
                     <h2 className="text-5xl font-bold relative inline-block  text-white">
                         About me
+
                         <span className="brush-bg left-[-25%] w-full h-[3em]"></span>
                     </h2>
 
@@ -28,7 +29,8 @@ function About() {
                     </div>
                 </div>
                 <div className="w-full flex justify-center items-center ">
-                    <img src={aboutMe} className="w-full h-full object-cover" alt=""/>
+                    <img loading="lazy" src={aboutMe} className="w-full h-full object-cover"
+                         alt="Image of Oleksandr Petryshyn sitting on a coach"/>
                 </div>
             </div>
         </div>

@@ -51,7 +51,7 @@ function ArticleCard({article}) {
         const existingScript = document.getElementById(`article-json-ld-${url}`);
         if (existingScript) existingScript.remove();
 
-    
+
         const script = document.createElement('script');
         script.type = 'application/ld+json';
         script.id = `article-json-ld-${url}`;
@@ -66,7 +66,8 @@ function ArticleCard({article}) {
     return (
         <NavLink className="flex w-full flex-col gap-4" to={`/blog/${url}`} title={title}>
             <div className="flex w-full">
-                <img className="w-full h-auto max-h-80 object-cover" src={image_url} alt=""/>
+                <img loading="lazy" className="w-full h-auto max-h-80 object-cover" src={image_url} title={shortTitle}
+                     alt={shortTitle}/>
             </div>
             <div className="flex flex-col gap-3">
                 <div className="flex gap-3 items-center">

@@ -20,7 +20,8 @@ function Experience(props) {
 
                 <div className="flex flex-col gap-8">
                     <div className="flex gap-8 items-center">
-                        <img className="w-[75px]" src={argoniumImage} alt="Splentum company icon" title="Splentum"/>
+                        <img loading="lazy" className="w-[75px]" src={argoniumImage} alt="Splentum company icon"
+                             title="Splentum"/>
                         <div className="flex flex-col ">
                             <span className="text-lg">Argonium Sp. z o. o.</span>
                             <p className=" text-sm">Jan 2025 – Present |
@@ -33,7 +34,8 @@ function Experience(props) {
                         </div>
                     </div>
                     <div className="flex gap-8 items-center">
-                        <img className="w-[75px]" src={splentumImage} alt="Splentum company icon" title="Splentum"/>
+                        <img loading="lazy" className="w-[75px]" src={splentumImage} alt="Splentum company icon"
+                             title="Splentum"/>
                         <div className="flex flex-col ">
                             <span className="text-lg">Splentum Sp. z o. o.</span>
                             <p className=" text-sm">Mar 2016 – Oct 2017 |
@@ -46,7 +48,7 @@ function Experience(props) {
                         </div>
                     </div>
                     <div className="flex gap-8 items-center">
-                        <img className="w-[75px]" src={netiImage} alt="Neti company icon" title="Neti"/>
+                        <img loading="lazy" className="w-[75px]" src={netiImage} alt="Neti company icon" title="Neti"/>
                         <div className="flex flex-col ">
                             <span className="text-lg">Neti Sp. z o. o.</span>
                             <p className=" text-sm">Dec 2015 – Feb 2016 |
@@ -82,7 +84,9 @@ function Experience(props) {
                     </div>
                 </div>
                 <div className="w-full flex justify-center items-center ">
-                    <img src={education} className="w-full h-full object-cover" alt=""/>
+                    <img loading="lazy" src={education} className="w-full h-full object-cover"
+                         title="Image of  University of Information Technology and Management in Rzeszów"
+                         alt="Image of  University of Information Technology and Management in Rzeszów"/>
                 </div>
             </div>
         </div>
