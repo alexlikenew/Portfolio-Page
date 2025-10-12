@@ -3,10 +3,9 @@ import ArticleCard from "./ArticleCard.jsx";
 import {useArticles} from "../features/articles/useArticles.jsx";
 import {getArticles} from "../services/apiArticles.jsx";
 
-function LatestArticles(props) {
+function LatestArticles({articlesCount}) {
 
     let {data: articles, isPending, error} = useArticles();
-
     let blogSchema = ''
 
     if (!isPending) {
@@ -60,7 +59,9 @@ function LatestArticles(props) {
                 </div>
                 {isPending ? <div className="flex justify-center">Loading...</div> :
                     <div className="w-full grid-cols-3 grid gap-8">
-                        {articles.slice(0, 3).map(article => <ArticleCard key={article.url} article={article}/>)}
+                        {articles.slice(0, articlesCount).sort((a, b) => new Date(b.createdDate) - new Date(a.createdDate)).map(article =>
+                            <ArticleCard key={article.url}
+                                         article={article}/>)}
                     </div>}
                 {!isPending &&
                     <script type="application/ld+json">

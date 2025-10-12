@@ -389,6 +389,42 @@ body {
     opacity: 1;
   }
 }
+.dot-music {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #166534;
+  display: inline-block;
+  margin: 0 2px;
+  animation: musicBeat 1s infinite;
+}
+
+.dot-music:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.dot-music:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dot-music:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes musicBeat {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  75% {
+    opacity: 0.8;
+  }
+}
 .icon-container svg {
   width: 64px;
   height: 64px;
@@ -449,6 +485,15 @@ body {
 
 .cookies.show {
   right: 20px;
+}
+
+.nav.open .navbar__bottom {
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(252, 252, 252, 0.9);
+}
+.nav.open .navbar__bottom img {
+  transition: all 0.3s ease-in-out;
+  opacity: 100%;
 }
 
 .blog__content--full article {

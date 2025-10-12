@@ -4,7 +4,7 @@ import LatestArticles from "../ui/LatestArticles.jsx";
 function Blog(props) {
     return (
         <>
-            <LatestArticles/>
+            <LatestArticles articlesCount="24"/>
         </>
     );
 }

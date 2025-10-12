@@ -17,7 +17,7 @@ function Index(props) {
             <Collaborate/>
             <Tools/>
             <Experience/>
-            <LatestArticles/>
+            <LatestArticles articlesCount="3"/>
             <FAQ/>
         </>
     );

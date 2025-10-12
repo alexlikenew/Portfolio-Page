@@ -24,7 +24,7 @@ function Footer(props) {
                                                                                         alt=""/></Button>
                 </div>
                 <div className="w-full flex flex-col pt-12 border-t-1 border-secondary-300">
-                    <div className=" grid grid-cols-5 ">
+                    <div className=" grid grid-cols-4 ">
                         <div className="flex flex-col ">
                             <h3 className="text-lg font-bold mb-4">Home</h3>
                             <NavLink className="mb-2" to="/">
@@ -54,6 +54,18 @@ function Footer(props) {
                                     </NavLink>
                                 ))
                             }
+                        </div>
+                        <div className="flex flex-col">
+                            <h3 className="text-lg font-bold mb-4">Currently</h3>
+                            <div className=" flex flex-col gap-2">
+                                <div className=" inline-flex items-center gap-1">Working on: <span
+                                    className="font-bold">Blackbox</span></div>
+                                <div className="  inline-flex items-center gap-1">Learning: <span
+                                    className="font-bold">NodeJS</span></div>
+                                <div className="  inline-flex items-center gap-1">Listening: <span
+                                    className="font-bold"><span
+                                    className="dot-music"></span> Calming Rain - Offside</span></div>
+                            </div>
                         </div>
                         <div className="flex flex-col ">
                             <h3 className="text-lg font-bold mb-4">Contact</h3>
@@ -93,10 +105,11 @@ function Footer(props) {
                                     alexlikenew.dev@gmail.com
                                 </a>
                             </div>
-                            <div>
-                                <img className="max-w-36" src={logoWebp} alt=""/>
+                            <div className="flex items-center align-center ">
+                                {/*<img className="max-w-36" src={logoWebp} alt=""/>*/}
                             </div>
                         </div>
+
                     </div>
                     <Follow classes={"bg-secondary-100"}/>
                     <div className="flex justify-between mt-12 ">

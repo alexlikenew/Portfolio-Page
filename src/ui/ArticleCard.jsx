@@ -7,7 +7,7 @@ import {aboutMe, authorImage} from '../assets/img/index.jsx';
 function ArticleCard({article}) {
     const {title, category, readingTime, content, url, createdDate, author, image_url} = article;
     console.log(article)
-    const shortTitle = useTruncateText(title, 50)
+    const shortTitle = useTruncateText(title, 87)
     const shortContent = useTruncateText(content, 150)
 
 
