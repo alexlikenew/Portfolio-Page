@@ -115,12 +115,12 @@ function Footer(props) {
                     <div className="flex justify-between mt-12 ">
                         <div>© {new Date().getFullYear()} All Rights Reserved</div>
                         <ul className="flex flex-row list-none gap-4 ">
-                            <li>
+                            <li className="hidden">
                                 <NavLink to="/privacy-policy">
                                     <span className="underline">Privacy policy</span>
                                 </NavLink>
                             </li>
-                            <li>
+                            <li className="hidden">
                                <span className="underline cursor-pointer">
                                    Cookies settings
                                </span>

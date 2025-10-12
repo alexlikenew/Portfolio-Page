@@ -31,7 +31,10 @@ function Navigation(props) {
                 <div className="navbar__bottom flex align-center justify-center items-center ">
                     <div className="container flex flex-row justify-between items-center pt-3 pb-3">
                         <div className="navbar__bottom--left flex items-start">
-                            <img src={logoWebp} className="max-h-6 opacity-0" alt=""/>
+                            <NavLink to="/">
+                                <img src={logoWebp} className="max-h-6 opacity-0" alt=""/>
+
+                            </NavLink>
                         </div>
                         <div className="navbar__bottom--right">
                             <ul className="flex flex-row list-none gap-2 ">
