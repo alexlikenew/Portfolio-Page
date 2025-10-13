@@ -7,10 +7,15 @@ import Tools from "../ui/Tools.jsx";
 import Experience from "../ui/Experience.jsx";
 import LatestArticles from "../ui/LatestArticles.jsx";
 import FAQ from "../ui/FAQ.jsx";
+import usePageMeta from "../hooks/usePageMeta.jsx";
+import PageMeta from "../hooks/usePageMeta.jsx";
 
 function Index(props) {
+
     return (
+
         <>
+            <PageMeta/>
             <Hero/>
             <About/>
             <Skills/>

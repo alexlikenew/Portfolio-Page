@@ -3,6 +3,8 @@ import {useParams} from "react-router";
 import {useArticleById} from "../features/articles/useArticlebyId.jsx";
 import {getArticleById} from "../services/apiArticles.jsx";
 import {authorImage} from "../assets/img/index.jsx";
+import usePageMeta from "../hooks/usePageMeta.jsx";
+import PageMeta from "../hooks/usePageMeta.jsx";
 
 function BlogPage(props) {
 
@@ -12,6 +14,15 @@ function BlogPage(props) {
 
     return (
         <>
+            {isPending ? '' : <PageMeta
+                title={`${article.title} | Blog – Oleksandr Petryshyn`}
+                description={article.description}
+                ogType="article"
+                ogUrl={`https://alexlikenew.pl/blog/${article.url}`}
+                ogImage={article.image}
+                canonical={`https://alexlikenew.pl/blog/${article.url}`}
+            />}
+
             {isPending ? 'Loading...' : <div className="w-full mt-40 mb-40">
                 <div className="container">
                     <header className="grid grid-cols-[60%_35%]  justify-between">

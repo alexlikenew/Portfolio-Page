@@ -11,6 +11,7 @@ import BlogPage from "./pages/BlogPage.jsx";
 import FAQ from "./pages/FAQ.jsx";
 import {SpeedInsights} from "@vercel/speed-insights/react";
 import AboutPage from "./pages/About.jsx";
+import {HelmetProvider} from "react-helmet-async";
 
 function App() {
     const [count, setCount] = useState(0)
@@ -18,21 +19,24 @@ function App() {
 
     return (
         <>
-            <SpeedInsights/>
-            <QueryClientProvider client={queryClient}>
-                <BrowserRouter>
-                    <Routes>
-                        <Route element={<AppLayout/>}>
-                            <Route index path="/" element={<Index/>}/>
-                            <Route path="/faq" element={<FAQ/>}/>
-                            <Route path="/about" element={<AboutPage/>}/>
-                            <Route path="/blog" element={<Blog/>}/>
-                            <Route path="/blog/:url" element={<BlogPage/>}/>
-                            <Route path="/contact" element={<Contact/>}/>
-                        </Route>
-                    </Routes>
-                </BrowserRouter>
-                // </QueryClientProvider>
+            <HelmetProvider>
+
+                <SpeedInsights/>
+                <QueryClientProvider client={queryClient}>
+                    <BrowserRouter>
+                        <Routes>
+                            <Route element={<AppLayout/>}>
+                                <Route index path="/" element={<Index/>}/>
+                                <Route path="/faq" element={<FAQ/>}/>
+                                <Route path="/about" element={<AboutPage/>}/>
+                                <Route path="/blog" element={<Blog/>}/>
+                                <Route path="/blog/:url" element={<BlogPage/>}/>
+                                <Route path="/contact" element={<Contact/>}/>
+                            </Route>
+                        </Routes>
+                    </BrowserRouter>
+                    // </QueryClientProvider>
+            </HelmetProvider>
         </>
     )
 }
