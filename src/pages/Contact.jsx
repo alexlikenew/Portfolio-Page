@@ -4,8 +4,7 @@ import {contactPage, slowmo} from "../assets/img/index.jsx";
 import Button from "../ui/Button.jsx";
 import {useMutation} from "@tanstack/react-query";
 import {supabase} from "../services/supabase.jsx";
-import usePageMeta from "../hooks/usePageMeta.jsx";
-import PageMeta from "../hooks/usePageMeta.jsx";
+import PageMeta from "../ui/PageMeta.jsx";
 
 function Contact(props) {
     const {register, handleSubmit, reset} = useForm()
