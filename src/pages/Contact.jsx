@@ -40,39 +40,39 @@ function Contact(props) {
             />
 
             <section className="w-full h-screen relative">
-                <img src={slowmo} className="absolute w-full h-full t-0 b-0 left-0 right-0" alt=""/>
-                <div className="container flex flex-col gap-8 pt-40">
+                <img src={slowmo} className="absolute w-full h-full top-0 bottom-0 left-0 right-0" alt=""/>
+                <div className="container flex flex-col sm:gap-4 md:gap-6 lg:gap-8 sm:pt-20 md:pt-32 lg:pt-40">
                     <div>
-                        <h1 className="text-5xl font-bold relative inline-block  ">Fill the form.<br></br>It`s easy.
+                        <h1 className="sm:text-3xl md:text-4xl lg:text-5xl font-bold relative inline-block  ">Fill the form.<br></br>It`s easy.
                         </h1>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-2 relative">
+                    <div className="sm:grid-cols-1 lg:grid-cols-2 sm:gap-4 lg:gap-2 relative grid">
 
-                        <div className="pr-16 flex flex-col gap-10">
-                            <div className="flex flex-col gap-4">
+                        <div className="sm:pr-0 lg:pr-16 flex flex-col sm:gap-6 lg:gap-10">
+                            <div className="flex flex-col sm:gap-2 lg:gap-4">
 
                                 <p>Have a question or idea? Just fill out the form or connect with me through the
-                                    ‘Follow
-                                    Me’ links below—I’d love to hear from you!
+                                   ‘Follow
+                                   Me’ links below—I’d love to hear from you!
                                 </p>
                             </div>
                             <form
-                                className="flex flex-col gap-4 p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg"
+                                className="flex flex-col sm:gap-3 lg:gap-4 sm:p-4 lg:p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg"
                                 onSubmit={handleSubmit(onSubmit)}
                             >
-                                <div className="grid grid-cols-2 gap-4">
+                                <div className="sm:grid-cols-1 md:grid-cols-2 sm:gap-2 lg:gap-4 grid">
                                     <input
                                         {...register('firstName', {required: true})}
                                         placeholder="First Name"
                                         type="text"
-                                        className="p-2 rounded-lg bg-white/20  placeholder-white/70 focus:outline-none"
+                                        className="sm:p-1 lg:p-2 rounded-lg bg-white/20  placeholder-white/70 focus:outline-none"
                                     />
                                     <input
                                         {...register('lastName')}
                                         placeholder="Last Name"
                                         type="text"
-                                        className="p-2 rounded-lg bg-white/20  placeholder-white/70 focus:outline-none"
+                                        className="sm:p-1 lg:p-2 rounded-lg bg-white/20  placeholder-white/70 focus:outline-none"
                                     />
                                 </div>
 
@@ -81,7 +81,7 @@ function Contact(props) {
                                         {...register('email', {required: true})}
                                         placeholder="Email"
                                         type="text"
-                                        className="w-full p-2 rounded-lg bg-white/20  placeholder-white/70 focus:outline-none"
+                                        className="w-full sm:p-1 lg:p-2 rounded-lg bg-white/20  placeholder-white/70 focus:outline-none"
                                     />
                                 </div>
 
@@ -90,14 +90,14 @@ function Contact(props) {
                                 {...register('message', {required: true})}
                                 placeholder="Write your message"
                                 rows="5"
-                                className="w-full p-2 rounded-lg bg-white/20  placeholder-white/70 focus:outline-none resize-none"
+                                className="w-full sm:p-1 lg:p-2 rounded-lg bg-white/20  placeholder-white/70 focus:outline-none resize-none"
                             ></textarea>
                                 </div>
                                 <Button type="submit" classes="btn btn-transparent">Wyślij</Button>
                             </form>
 
                         </div>
-                        <div className="pl-16 ">
+                        <div className="sm:pl-0 lg:pl-16 ">
 
 
                         </div>

@@ -1,4 +1,3 @@
-
 import {useParams} from "react-router";
 import {useArticleById} from "../features/articles/useArticlebyId.jsx";
 import {authorImage} from "../assets/img/index.jsx";
@@ -24,29 +23,29 @@ function BlogPage(props) {
             )}
 
 
-            {isPending ? 'Loading...' : <div className="w-full mt-40 mb-40">
+            {isPending ? 'Loading...' : <div className="w-full sm:mt-20 md:mt-32 lg:mt-40 sm:mb-20 lg:mb-40">
                 <div className="container">
-                    <header className="grid grid-cols-[60%_35%]  justify-between">
+                    <header className="sm:grid-cols-1 lg:grid-cols-[60%_35%] sm:justify-center lg:justify-between grid">
                         <div className="flex flex-col">
-                            <h1 className="text-4xl font-bold">{article.title}</h1>
-                            <p className="mt-4 mb-4">{article.content}</p>
-                            <div className="flex gap-3 items-center mb-4">
+                            <h1 className="sm:text-2xl md:text-3xl lg:text-4xl font-bold">{article.title}</h1>
+                            <p className="sm:mt-2 sm:mb-2 lg:mt-4 lg:mb-4">{article.content}</p>
+                            <div className="flex sm:gap-2 lg:gap-3 items-center sm:mb-2 lg:mb-4">
                                 <div className="text-sm bg-tertiary px-2 py-1 text-primary">{article.category}</div>
                                 <div className="text-sm">{article.readingTime}</div>
                             </div>
 
                         </div>
-                        <img loading="lazy" className="w-full" src={article.image_url} alt={article.title}
+                        <img loading="lazy" className="w-full sm:mt-4 lg:mt-0" src={article.image_url} alt={article.title}
                              title={article.title}/>
 
                     </header>
-                    <div className="grid grid-cols-[70%_25%] justify-between">
-                        <div className="flex flex-col gap-12">
+                    <div className="sm:grid-cols-1 lg:grid-cols-[70%_25%] sm:justify-center lg:justify-between grid">
+                        <div className="flex flex-col sm:gap-6 lg:gap-12">
                             <div className="blog__content--full"
                                  dangerouslySetInnerHTML={{__html: article.content_full ? article.content_full : ''}}
                             />
-                            <div className="flex gap-4">
-                                <img src={authorImage} className="w-12 h-12 rounded-full object-cover" alt=""/>
+                            <div className="flex sm:gap-2 lg:gap-4">
+                                <img src={authorImage} className="sm:w-8 sm:h-8 lg:w-12 lg:h-12 rounded-full object-cover" alt=""/>
 
                                 <div className="flex flex-col">
                                     <span>{article.author}</span>
@@ -60,7 +59,7 @@ function BlogPage(props) {
                             </div>
 
                         </div>
-                        <aside className="flex flex-col mt-8">
+                        <aside className="flex flex-col sm:mt-4 lg:mt-8">
                             <div>W tym artykule:</div>
                             <ul className="flex flex-col article__header__list gap-1"></ul>
                         </aside>
