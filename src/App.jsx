@@ -11,7 +11,7 @@ import BlogPage from "./pages/BlogPage.jsx";
 import FAQ from "./pages/FAQ.jsx";
 import {SpeedInsights} from "@vercel/speed-insights/react";
 import AboutPage from "./pages/About.jsx";
-import {HelmetProvider} from "react-helmet-async";
+
 
 function App() {
     const [count, setCount] = useState(0)
@@ -19,7 +19,7 @@ function App() {
 
     return (
         <>
-            <HelmetProvider>
+
 
                 <SpeedInsights/>
                 <QueryClientProvider client={queryClient}>
@@ -36,7 +36,7 @@ function App() {
                         </Routes>
                     </BrowserRouter>
                     // </QueryClientProvider>
-            </HelmetProvider>
+
         </>
     )
 }
