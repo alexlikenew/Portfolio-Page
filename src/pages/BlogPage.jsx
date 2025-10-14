@@ -1,10 +1,8 @@
-import React, {useEffect} from 'react';
+
 import {useParams} from "react-router";
 import {useArticleById} from "../features/articles/useArticlebyId.jsx";
-import {getArticleById} from "../services/apiArticles.jsx";
 import {authorImage} from "../assets/img/index.jsx";
-import usePageMeta from "../hooks/usePageMeta.jsx";
-import PageMeta from "../hooks/usePageMeta.jsx";
+import PageMeta from "../ui/PageMeta.jsx";
 
 function BlogPage(props) {
 
@@ -14,14 +12,17 @@ function BlogPage(props) {
 
     return (
         <>
-            {isPending ? '' : <PageMeta
-                title={`${article.title} | Blog – Oleksandr Petryshyn`}
-                description={article.description}
-                ogType="article"
-                ogUrl={`https://alexlikenew.pl/blog/${article.url}`}
-                ogImage={article.image}
-                canonical={`https://alexlikenew.pl/blog/${article.url}`}
-            />}
+            {!isPending && article && (
+                <PageMeta
+                    title={`${article.title} | Blog – Oleksandr Petryshyn`}
+                    description={article.description || 'Przeczytaj najnowszy wpis na blogu o fotografii i sztuce produktu.'}
+                    ogType="article"
+                    ogUrl={`https://alexlikenew.pl/blog/${article.url}`}
+                    ogImage={article.image || 'https://alexlikenew.pl/default-og-image.jpg'}
+                    canonical={`https://alexlikenew.pl/blog/${article.url}`}
+                />
+            )}
+
 
             {isPending ? 'Loading...' : <div className="w-full mt-40 mb-40">
                 <div className="container">

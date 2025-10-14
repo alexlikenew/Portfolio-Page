@@ -34,10 +34,12 @@ function Contact(props) {
     return (
         <>
             <PageMeta
-                title="Contact – React Frontend Developer | Rzeszów | Oleksandr Petryshyn"
-                description="Get in touch with Oleksandr to discuss your next web project or collaboration."
+                title="Contact – Work With React Frontend Developer | Rzeszów | Oleksandr Petryshyn"
+                description="Get in touch with Oleksandr Petryshyn – a React Frontend Developer available for collaborations, freelance projects, and creative partnerships. Let's build something great together."
+                keywords="contact frontend developer, hire React developer, freelance web developer Rzeszów, Oleksandr Petryshyn, contact page, work together"
                 canonical="https://alexlikenew.pl/contact"
             />
+
             <section className="w-full h-screen relative">
                 <img src={slowmo} className="absolute w-full h-full t-0 b-0 left-0 right-0" alt=""/>
                 <div className="container flex flex-col gap-8 pt-40">

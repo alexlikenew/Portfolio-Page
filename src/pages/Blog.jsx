@@ -1,17 +1,18 @@
 import React from 'react';
 import LatestArticles from "../ui/LatestArticles.jsx";
-import usePageMeta from "../hooks/usePageMeta.jsx";
-import PageMeta from "../hooks/usePageMeta.jsx";
+import PageMeta from "../ui/PageMeta.jsx";
 
 function Blog(props) {
  
     return (
         <>
             <PageMeta
-                title="Blog – Frontend Tips & React Tutorials | Oleksandr Petryshyn"
-                description="Articles about frontend development, React best practices and performance optimizations."
+                title="Blog – Frontend Development Insights, React Tutorials & Tips | Oleksandr Petryshyn"
+                description="Read the latest articles by Oleksandr Petryshyn on React, frontend development, performance optimization, and modern web design trends."
+                keywords="React blog, frontend tips, web development articles, React tutorials, performance optimization, Oleksandr Petryshyn"
                 canonical="https://alexlikenew.pl/blog"
             />
+
             <LatestArticles articlesCount="24"/>
         </>
     );

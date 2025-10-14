@@ -7,15 +7,19 @@ import Tools from "../ui/Tools.jsx";
 import Experience from "../ui/Experience.jsx";
 import LatestArticles from "../ui/LatestArticles.jsx";
 import FAQ from "../ui/FAQ.jsx";
-import usePageMeta from "../hooks/usePageMeta.jsx";
-import PageMeta from "../hooks/usePageMeta.jsx";
+import PageMeta from "../ui/PageMeta.jsx";
 
 function Index(props) {
 
     return (
 
         <>
-            <PageMeta/>
+            <PageMeta
+                title="React Frontend Developer – Modern Websites and Web Apps | Rzeszów | Oleksandr Petryshyn"
+                description="I'm Oleksandr Petryshyn, a React Frontend Developer from Rzeszów. I build fast, beautiful, and high-performing websites using React, JavaScript, and modern tools."
+                keywords="React developer, frontend developer Rzeszów, modern web development, JavaScript developer, responsive websites, Oleksandr Petryshyn, AlexLikeNew"
+                canonical="https://alexlikenew.pl/"
+            />
             <Hero/>
             <About/>
             <Skills/>
