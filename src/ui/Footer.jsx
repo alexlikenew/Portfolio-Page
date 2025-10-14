@@ -9,13 +9,13 @@ import {logoSvg, logoWebp} from "../assets/img/index.jsx";
 function Footer(props) {
     let {data: articles, isPending, error} = useArticles();
     return (
-        <div className="w-full pt-16 pb-8 bg-primary-200">
-            <div className="container flex flex-col gap-16 justify-center items-center">
+        <div className="w-full pt-8 sm:pt-12 md:pt-16 pb-4 sm:pb-6 md:pb-8 bg-primary-200">
+            <div className="container flex flex-col gap-8 sm:gap-12 md:gap-16 justify-center items-center">
                 <div
-                    className="w-full flex justify-center items-center flex-col gap-4 max-w-1/2 text-center text-balance ">
-                    <h2 className="text-3xl">Let’s create something <span
+                    className="w-full flex justify-center items-center flex-col gap-2 sm:gap-3 md:gap-4 max-w-full md:max-w-[50%] text-center text-balance ">
+                    <h2 className="text-2xl sm:text-2xl md:text-3xl">Let’s create something <span
                         className="text-tertiary font-bold">amazing</span> together</h2>
-                    <p className="opacity-70 mt-4 mb-4">
+                    <p className="opacity-70 mt-2 mb-2 sm:mt-3 sm:mb-3 md:mt-4 md:mb-4 text-sm sm:text-sm md:text-base">
                         Let’s build something great together. Whether you need a modern, high-performance website
                         or a creative frontend solution, I’m here to turn your ideas into reality.
                         <br></br>Get in touch and let’s make your project stand out.
@@ -23,31 +23,31 @@ function Footer(props) {
                     <Button link="/contact" classes="btn btn-transparent ">Contact <img className="" src={arrowRight}
                                                                                         alt=""/></Button>
                 </div>
-                <div className="w-full flex flex-col pt-12 border-t-1 border-secondary-300">
-                    <div className=" grid grid-cols-4 ">
+                <div className="w-full flex flex-col pt-6 sm:pt-8 md:pt-12 border-t-1 border-secondary-300">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-12">
                         <div className="flex flex-col ">
-                            <h3 className="text-lg font-bold mb-4">Home</h3>
-                            <NavLink className="mb-2" to="/">
+                            <h3 className="text-base sm:text-lg md:text-lg font-bold mb-2 sm:mb-3 md:mb-4">Home</h3>
+                            <NavLink className="mb-1 sm:mb-2 md:mb-2 text-sm sm:text-base" to="/">
                                 <span>Home</span>
                             </NavLink>
-                            <NavLink className="mb-2" to="/about">
+                            <NavLink className="mb-1 sm:mb-2 md:mb-2 text-sm sm:text-base" to="/about">
 
                                 <span>About me</span>
-                            </NavLink> <NavLink className="mb-2" to="/faq">
+                            </NavLink> <NavLink className="mb-1 sm:mb-2 md:mb-2 text-sm sm:text-base" to="/faq">
 
                             <span>FAQ</span>
                         </NavLink>
-                            <NavLink className="mb-2" to="/blog"><span>Blog</span></NavLink>
-                            <NavLink className="mb-2" to="/contact"><span>Contact</span></NavLink>
+                            <NavLink className="mb-1 sm:mb-2 md:mb-2 text-sm sm:text-base" to="/blog"><span>Blog</span></NavLink>
+                            <NavLink className="mb-1 sm:mb-2 md:mb-2 text-sm sm:text-base" to="/contact"><span>Contact</span></NavLink>
                         </div>
                         <div className="flex flex-col">
-                            <h3 className="text-lg font-bold mb-4">Blog</h3>
+                            <h3 className="text-base sm:text-lg md:text-lg font-bold mb-2 sm:mb-3 md:mb-4">Blog</h3>
 
                             {isPending ?
                                 <div className="flex justify-center items-center">
                                     <div className="loader"></div>
                                 </div> : articles.slice(0, 5).map((article) => (
-                                    <NavLink className="mb-2" to={`/blog/${article.url}`} title={article.title}>
+                                    <NavLink className="mb-1 sm:mb-2 md:mb-2 text-sm sm:text-base" to={`/blog/${article.url}`} title={article.title}>
                                         <span>  {article.title.length > 30
                                             ? article.title.slice(0, 26) + '...'
                                             : article.title}</span>
@@ -56,8 +56,8 @@ function Footer(props) {
                             }
                         </div>
                         <div className="flex flex-col">
-                            <h3 className="text-lg font-bold mb-4">Currently</h3>
-                            <div className=" flex flex-col gap-2">
+                            <h3 className="text-base sm:text-lg md:text-lg font-bold mb-2 sm:mb-3 md:mb-4">Currently</h3>
+                            <div className=" flex flex-col gap-1 sm:gap-2 md:gap-2 text-sm sm:text-base">
                                 <div className=" inline-flex items-center gap-1">Working on: <span
                                     className="font-bold">Blackbox</span></div>
                                 <div className="  inline-flex items-center gap-1">Learning: <span
@@ -68,8 +68,8 @@ function Footer(props) {
                             </div>
                         </div>
                         <div className="flex flex-col ">
-                            <h3 className="text-lg font-bold mb-4">Contact</h3>
-                            <div className="flex gap-3 align-center mb-2">
+                            <h3 className="text-base sm:text-lg md:text-lg font-bold mb-2 sm:mb-3 md:mb-4">Contact</h3>
+                            <div className="flex gap-2 sm:gap-3 md:gap-3 align-center mb-1 sm:mb-2 md:mb-2 text-sm sm:text-base">
                                 <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_240_2562)">
@@ -91,7 +91,7 @@ function Footer(props) {
                                     Rzeszów, Poland
                                 </span>
                             </div>
-                            <div className="flex gap-3 align-center mb-2">
+                            <div className="flex gap-2 sm:gap-3 md:gap-3 align-center mb-1 sm:mb-2 md:mb-2 text-sm sm:text-base">
                                 <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -112,9 +112,9 @@ function Footer(props) {
 
                     </div>
                     <Follow classes={"bg-secondary-100"}/>
-                    <div className="flex justify-between mt-12 ">
+                    <div className="flex flex-col md:flex-row justify-between mt-6 sm:mt-8 md:mt-12 gap-4 md:gap-0 items-center text-sm sm:text-base">
                         <div>© {new Date().getFullYear()} All Rights Reserved</div>
-                        <ul className="flex flex-row list-none gap-4 ">
+                        <ul className="flex flex-col md:flex-row list-none gap-2 md:gap-4 ">
                             <li className="hidden">
                                 <NavLink to="/privacy-policy">
                                     <span className="underline">Privacy policy</span>
