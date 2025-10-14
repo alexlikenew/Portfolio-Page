@@ -2,18 +2,17 @@ import React from 'react';
 
 function Skills(props) {
     return (
-        <div className="w-full mt-50 mb-60">
-            <div className="container flex justify-center flex-col gap-10">
-                <div className="flex items-center flex-col ">
-                    <h2 className="text-5xl font-bold relative inline-block mb-18  text-white">Technologies
+        <div className="w-full mt-20 sm:mt-16 md:mt-24 lg:mt-50 mb-20 sm:mb-16 md:mb-24 lg:mb-60">
+            <div className="container flex justify-center flex-col gap-6 sm:gap-8 md:gap-10">
+                <div className="flex items-center flex-col">
+                    <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold relative inline-block mb-8 sm:mb-10 md:mb-12 lg:mb-18 text-white">Technologies
                         <span className="brush-bg left-[-16%] w-[141%] h-[3.3em]"></span></h2>
-                    {/*<h2 className="text-5xl font-bold mb-8">I work with every day</h2>*/}
-                    <p className="opacity-70 mb-4 text-center">I build modern, high-performance websites using the
-                        latest frontend standards.<br></br>
-                        I combine clean design with strong functionality, focusing on detail and user experience.</p>
+                    <p className="opacity-70 mb-2 sm:mb-3 md:mb-4 text-center text-sm sm:text-base md:text-lg">I build modern, high-performance websites using the
+                                                                                                               latest frontend standards.<br></br>
+                                                                                                               I combine clean design with strong functionality, focusing on detail and user experience.</p>
                 </div>
-                <div className="w-full flex justify-center gap-12">
-                    <div className="icon-container flex flex-col items-center justify-center gap-3 p-1">
+                <div className="w-full flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-10 lg:gap-12">
+                <div className="icon-container flex flex-col items-center justify-center gap-3 p-1">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                             <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"/>
                             <path fill="#323330"

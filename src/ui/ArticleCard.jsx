@@ -10,7 +10,6 @@ function ArticleCard({article}) {
     const shortTitle = useTruncateText(title, 87)
     const shortContent = useTruncateText(content, 150)
 
-
     useEffect(() => {
         const articleSchema = {
             "@context": "https://schema.org",
@@ -47,10 +46,8 @@ function ArticleCard({article}) {
             "inLanguage": "en",
         };
 
-
         const existingScript = document.getElementById(`article-json-ld-${url}`);
         if (existingScript) existingScript.remove();
-
 
         const script = document.createElement('script');
         script.type = 'application/ld+json';
@@ -64,35 +61,31 @@ function ArticleCard({article}) {
         };
     }, [article]);
     return (
-        <NavLink className="flex w-full flex-col gap-4" to={`/blog/${url}`} title={title}>
+        <NavLink className="flex w-full flex-col gap-2 sm:gap-3 md:gap-4" to={`/blog/${url}`} title={title}>
             <div className="flex w-full">
-                <img loading="lazy" className="w-full h-auto max-h-80 object-cover" src={image_url} title={shortTitle}
+                <img loading="lazy" className="w-full h-auto max-h-[200px] sm:max-h-[250px] md:max-h-[300px] lg:max-h-80 object-cover" src={image_url} title={shortTitle}
                      alt={shortTitle}/>
             </div>
-            <div className="flex flex-col gap-3">
-                <div className="flex gap-3 items-center">
-                    <div className="text-sm bg-tertiary px-2 py-1 text-primary">{category}</div>
-                    <div className="text-sm">{readingTime}</div>
+            <div className="flex flex-col gap-2 sm:gap-3">
+                <div className="flex gap-2 sm:gap-3 items-center">
+                    <div className="text-xs sm:text-sm bg-tertiary px-1.5 sm:px-2 py-0.5 sm:py-1 text-primary">{category}</div>
+                    <div className="text-xs sm:text-sm">{readingTime}</div>
                 </div>
-                <div className="text-lg ">{shortTitle}</div>
+                <div className="text-base sm:text-lg">{shortTitle}</div>
                 <div className="">
-                    <div className="opacity-70">{shortContent}
-                    </div>
-
+                    <div className="opacity-70 text-sm sm:text-base">{shortContent}</div>
                 </div>
-                <div className="flex gap-4">
-                    <img src={authorImage} className="w-12 h-12 rounded-full object-cover" alt=""/>
+                <div className="flex gap-2 sm:gap-3 md:gap-4">
+                    <img src={authorImage} className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full object-cover" alt=""/>
                     <div className="flex flex-col">
-                        <span>{author}</span>
-                        <span
-                            className="text-sm opacity-50">Update on: {new Date(createdDate).toLocaleDateString('en-US', {
+                        <span className="text-sm sm:text-base">{author}</span>
+                        <span className="text-xs sm:text-sm opacity-50">Update on: {new Date(createdDate).toLocaleDateString('en-US', {
                             day: 'numeric',
                             month: 'long',
                             year: 'numeric'
                         })}</span>
                     </div>
                 </div>
-
             </div>
         </NavLink>
     );

@@ -40,9 +40,7 @@ const faqData = [
     }
 ];
 
-
 function Faq(props) {
-
     const [showAnswer, setShowAnswer] = useState('');
 
     function handleAnswer(id) {
@@ -72,7 +70,6 @@ function Faq(props) {
         script.text = JSON.stringify(faqSchema);
         document.head.appendChild(script);
 
-
         return () => {
             if (document.getElementById("faq-json-ld")) {
                 document.getElementById("faq-json-ld").remove();
@@ -81,38 +78,35 @@ function Faq(props) {
     }, []);
 
     return (
-        <div className="w-full mt-40 mb-30">
-            <div className="container container--768 flex flex-col gap-10">
-                <div className="w-full flex flex-col items-center justify-center gap-10">
-                    <h2 className="text-5xl font-bold relative inline-block  text-white">
+        <div className="w-full mt-20 sm:mt-28 md:mt-32 lg:mt-40 mb-16 sm:mb-20 md:mb-24 lg:mb-30">
+            <div className="container container--768 flex flex-col gap-6 sm:gap-8 md:gap-10">
+                <div className="w-full flex flex-col items-center justify-center gap-6 sm:gap-8 md:gap-10">
+                    <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold relative inline-block text-white">
                         FAQ
                         <span className="brush-bg left-[-66%] w-[250%] h-[3em]"></span>
                     </h2>
-                    <p className="opacity-70 mb-4 text-center">
+                    <p className="opacity-70 mb-2 sm:mb-3 md:mb-4 text-center text-sm sm:text-base">
                         Find answers to the most common questions about my frontend development experience, skills, and
                         projects. <br></br>
                         A helpful guide for clients and recruiters to understand my capabilities and working style.
                     </p>
                 </div>
-                <div className="w-full  flex flex-col items-center justify-center gap-3 items-start">
+                <div className="w-full flex flex-col items-center justify-center gap-2 sm:gap-3">
                     {faqData.map(question =>
                         <dl id={question.id}
-                            className={`w-full flex flex-col  justify-center gap-2 cursor-pointer rounded-1 border-1 px-4 py-6 transition-all duration-300 ${showAnswer === question.id ? 'border-tertiary-200' : 'border-secondary-300 hover:opacity-90 '}`}
+                            className={`w-full flex flex-col justify-center gap-2 cursor-pointer rounded-1 border-1 px-3 sm:px-4 py-4 sm:py-6 transition-all duration-300 ${showAnswer === question.id ? 'border-tertiary-200' : 'border-secondary-300 hover:opacity-90'}`}
                             onClick={() => handleAnswer(question.id)}>
-                            <dt className="flex w-full justify-between">{question.question}
+                            <dt className="flex w-full justify-between text-sm sm:text-base">{question.question}
                                 <img
-                                    className={`transition-all duration-500 ${showAnswer === question.id ? 'transform rotate-180' : ''}`}
+                                    className={`w-4 h-4 sm:w-5 sm:h-5 transition-all duration-500 ${showAnswer === question.id ? 'transform rotate-180' : ''}`}
                                     src={chevronDown}
                                     alt="Chevron down icon"
                                     title="Chevron down icon"/>
                             </dt>
-                            <dd className={`${showAnswer === question.id ? 'flex' : 'hidden'} opacity-70 `}>{question.answer}
+                            <dd className={`${showAnswer === question.id ? 'flex' : 'hidden'} opacity-70 text-sm sm:text-base`}>{question.answer}
                             </dd>
                         </dl>)}
-
-
                 </div>
-
             </div>
         </div>
     );

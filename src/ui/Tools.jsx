@@ -2,19 +2,18 @@ import React from 'react';
 
 function Skills(props) {
     return (
-        <div className="w-full mt-50 mb-30">
-            <div className="container flex justify-center flex-col gap-10">
-                <div className="flex items-center flex-col ">
-                    <h2 className="text-5xl font-bold relative inline-block mb-18  text-white">Tools
+        <div className="w-full mt-20 sm:mt-16 md:mt-24 lg:mt-50 mb-16 sm:mb-12 md:mb-20 lg:mb-30">
+            <div className="container flex justify-center flex-col gap-6 sm:gap-8 md:gap-10">
+                <div className="flex items-center flex-col">
+                    <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold relative inline-block mb-8 sm:mb-10 md:mb-12 lg:mb-18 text-white">Tools
                         <span className="brush-bg left-[-60%] w-[240%] h-[3.3em]"></span></h2>
-                    {/*<h2 className="text-5xl font-bold mb-8">That power my workflow</h2>*/}
-                    <p className="opacity-70 mb-4 text-center">From design to deployment, I rely on tools that keep my
-                        work organized and efficient.<br/>
-                        Git, WebStorm, Figma and Vite help me stay focused on what matters most — building great user
-                        experiences.</p>
+                    <p className="opacity-70 mb-2 sm:mb-3 md:mb-4 text-center text-sm sm:text-base md:text-lg">From design to deployment, I rely on tools that keep my
+                                                                                                               work organized and efficient.<br/>
+                                                                                                               Git, WebStorm, Figma and Vite help me stay focused on what matters most — building great user
+                                                                                                               experiences.</p>
                 </div>
 
-                <div className='w-full flex justify-center  gap-12'>
+                <div className="w-full flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-10 lg:gap-12">
 
                     <div className="icon-container flex flex-col items-center justify-center gap-3 p-1">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
