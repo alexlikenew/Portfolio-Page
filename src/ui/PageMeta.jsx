@@ -26,13 +26,12 @@ export default function PageMeta(props) {
     const meta = { ...defaults, ...props };
 
     useEffect(() => {
-        // 🔹 Tytuł strony
         document.title = meta.title;
 
-        // 🔹 Pomocnicza funkcja do aktualizacji meta tagów
         const setMeta = (attr, name, content) => {
             if (!content) return;
-            let tag = document.querySelector(`${attr}="${name}"`);
+            const selector = attr === "name" ? `[name="${name}"]` : `[property="${name}"]`;
+            let tag = document.head.querySelector(selector);
             if (!tag) {
                 tag = document.createElement("meta");
                 tag.setAttribute(attr, name);
@@ -41,7 +40,7 @@ export default function PageMeta(props) {
             tag.setAttribute("content", content);
         };
 
-        // 🔹 Standardowe meta tagi
+        // Standard meta
         setMeta("name", "description", meta.description);
         setMeta("name", "keywords", meta.keywords);
         setMeta("name", "author", meta.author);
@@ -49,7 +48,7 @@ export default function PageMeta(props) {
         setMeta("name", "language", meta.language);
         setMeta("name", "google-site-verification", meta.googleVerification);
 
-        // 🔹 Open Graph
+        // Open Graph
         setMeta("property", "og:type", meta.ogType);
         setMeta("property", "og:url", meta.canonical);
         setMeta("property", "og:title", meta.title);
@@ -58,19 +57,19 @@ export default function PageMeta(props) {
         setMeta("property", "og:locale", meta.ogLocale);
         setMeta("property", "og:site_name", meta.ogSiteName);
 
-        // 🔹 Twitter
+        // Twitter
         setMeta("name", "twitter:card", meta.twitterCard);
         setMeta("name", "twitter:url", meta.canonical);
         setMeta("name", "twitter:title", meta.title);
         setMeta("name", "twitter:description", meta.description);
         setMeta("name", "twitter:image", meta.twitterImage);
 
-        // 🔹 Kolory
+        // Kolory
         setMeta("name", "msapplication-TileColor", meta.msTileColor);
         setMeta("name", "theme-color", meta.themeColor);
 
-        // 🔹 Canonical link
-        let canonicalTag = document.querySelector("link[rel='canonical']");
+        // Canonical
+        let canonicalTag = document.head.querySelector("link[rel='canonical']");
         if (!canonicalTag) {
             canonicalTag = document.createElement("link");
             canonicalTag.setAttribute("rel", "canonical");
