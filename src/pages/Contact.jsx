@@ -39,29 +39,31 @@ function Contact(props) {
                 canonical="https://alexlikenew.pl/contact"
             />
 
-            <section className="w-full h-screen relative">
+            <section className="flex items-center w-full h-screen relative">
                 <img src={slowmo} className="absolute w-full h-full top-0 bottom-0 left-0 right-0" alt=""/>
-                <div className="container flex flex-col sm:gap-4 md:gap-6 lg:gap-8 sm:pt-20 md:pt-32 lg:pt-40">
+                <div className="container flex flex-col gap-8 sm:gap-4 md:gap-6 lg:gap-8 sm:pt-20 md:pt-32 lg:pt-40">
                     <div>
-                        <h1 className="sm:text-3xl md:text-4xl lg:text-5xl font-bold relative inline-block  ">Fill the form.<br></br>It`s easy.
+                        <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold relative inline-block  ">Fill
+                            the
+                            form.<br></br>It`s easy.
                         </h1>
                     </div>
 
-                    <div className="sm:grid-cols-1 lg:grid-cols-2 sm:gap-4 lg:gap-2 relative grid">
+                    <div className="sm:grid-cols-1 lg:grid-cols-2 sm:gap-4 lg:gap-2 relative grid ">
 
-                        <div className="sm:pr-0 lg:pr-16 flex flex-col sm:gap-6 lg:gap-10">
+                        <div className="sm:pr-0 lg:pr-16 flex flex-col sm:gap-6 lg:gap-10 gap-4">
                             <div className="flex flex-col sm:gap-2 lg:gap-4">
 
                                 <p>Have a question or idea? Just fill out the form or connect with me through the
-                                   ‘Follow
-                                   Me’ links below—I’d love to hear from you!
+                                    ‘Follow
+                                    Me’ links below—I’d love to hear from you!
                                 </p>
                             </div>
                             <form
-                                className="flex flex-col sm:gap-3 lg:gap-4 sm:p-4 lg:p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg"
+                                className="flex flex-col p-3  gap-2 sm:gap-3 lg:gap-4 sm:p-4 lg:p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg"
                                 onSubmit={handleSubmit(onSubmit)}
                             >
-                                <div className="sm:grid-cols-1 md:grid-cols-2 sm:gap-2 lg:gap-4 grid">
+                                <div className="sm:grid-cols-1 gap-2 md:grid-cols-2 sm:gap-2 lg:gap-4 grid">
                                     <input
                                         {...register('firstName', {required: true})}
                                         placeholder="First Name"

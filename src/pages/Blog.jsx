@@ -3,7 +3,7 @@ import LatestArticles from "../ui/LatestArticles.jsx";
 import PageMeta from "../ui/PageMeta.jsx";
 
 function Blog(props) {
- 
+
     return (
         <>
             <PageMeta
@@ -13,7 +13,7 @@ function Blog(props) {
                 canonical="https://alexlikenew.pl/blog"
             />
 
-            <LatestArticles articlesCount="24"/>
+            <LatestArticles articlesCount="24" classes="mt-30"/>
         </>
     );
 }

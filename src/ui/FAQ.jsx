@@ -83,7 +83,7 @@ function Faq(props) {
                 <div className="w-full flex flex-col items-center justify-center gap-6 sm:gap-8 md:gap-10">
                     <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold relative inline-block text-white">
                         FAQ
-                        <span className="brush-bg left-[-66%] w-[250%] h-[3em]"></span>
+                        <span className="brush-bg left-[-80%] w-[300%] h-[4em]"></span>
                     </h2>
                     <p className="opacity-70 mb-2 sm:mb-3 md:mb-4 text-center text-sm sm:text-base">
                         Find answers to the most common questions about my frontend development experience, skills, and

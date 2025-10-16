@@ -4,15 +4,16 @@ function Skills(props) {
     return (
         <div className="w-full mt-20 sm:mt-16 md:mt-24 lg:mt-50 mb-20 sm:mb-16 md:mb-24 lg:mb-60">
             <div className="container flex justify-center flex-col gap-6 sm:gap-8 md:gap-10">
-                <div className="flex items-center flex-col">
+                <div className="flex items-center flex-col sm:gap-0 gap-8">
                     <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold relative inline-block mb-8 sm:mb-10 md:mb-12 lg:mb-18 text-white">Technologies
                         <span className="brush-bg left-[-16%] w-[141%] h-[3.3em]"></span></h2>
-                    <p className="opacity-70 mb-2 sm:mb-3 md:mb-4 text-center text-sm sm:text-base md:text-lg">I build modern, high-performance websites using the
-                                                                                                               latest frontend standards.<br></br>
-                                                                                                               I combine clean design with strong functionality, focusing on detail and user experience.</p>
+                    <p className="opacity-70 mb-2 sm:mb-3 md:mb-4 text-center text-sm sm:text-base md:text-lg">I build
+                        modern, high-performance websites using the
+                        latest frontend standards.<br></br>
+                        I combine clean design with strong functionality, focusing on detail and user experience.</p>
                 </div>
                 <div className="w-full flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-10 lg:gap-12">
-                <div className="icon-container flex flex-col items-center justify-center gap-3 p-1">
+                    <div className="icon-container flex flex-col items-center justify-center gap-3 p-1">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                             <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"/>
                             <path fill="#323330"
@@ -45,13 +46,13 @@ function Skills(props) {
                         </svg>
                         <span className=" text-sm">Redux</span>
                     </div>
-                    <div className="icon-container flex flex-col items-center justify-center gap-3 p-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-                            <path
-                                d="M64 0C28.7 0 0 28.7 0 64s28.7 64 64 64c11.2 0 21.7-2.9 30.8-7.9L48.4 55.3v36.6h-6.8V41.8h6.8l50.5 75.8C116.4 106.2 128 86.5 128 64c0-35.3-28.7-64-64-64zm22.1 84.6l-7.5-11.3V41.8h7.5v42.8z"/>
-                        </svg>
-                        <span className=" text-sm">NextJS</span>
-                    </div>
+                    {/*<div className="icon-container flex flex-col items-center justify-center gap-3 p-1">*/}
+                    {/*    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">*/}
+                    {/*        <path*/}
+                    {/*            d="M64 0C28.7 0 0 28.7 0 64s28.7 64 64 64c11.2 0 21.7-2.9 30.8-7.9L48.4 55.3v36.6h-6.8V41.8h6.8l50.5 75.8C116.4 106.2 128 86.5 128 64c0-35.3-28.7-64-64-64zm22.1 84.6l-7.5-11.3V41.8h7.5v42.8z"/>*/}
+                    {/*    </svg>*/}
+                    {/*    <span className=" text-sm">NextJS</span>*/}
+                    {/*</div>*/}
 
                     <div className="icon-container flex flex-col items-center justify-center gap-3 p-1">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">

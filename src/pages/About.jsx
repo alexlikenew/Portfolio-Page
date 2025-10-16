@@ -12,7 +12,7 @@ function AboutPage(props) {
                 canonical="https://alexlikenew.pl/about"
             />
 
-            <About/>
+            <About classes="mt-30"/>
         </>
     );
 }

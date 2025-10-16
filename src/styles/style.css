@@ -213,6 +213,12 @@ button:disabled, button.disabled,
   cursor: not-allowed;
   opacity: 0.5;
 }
+@media only screen and (max-width: 768px) {
+  button,
+  .btn {
+    width: 100%;
+  }
+}
 
 .btn-primary {
   background-color: var(--color-primary-200);
@@ -437,6 +443,12 @@ body {
   background: url("/src/assets/img/brushes/blue-paint-brush-stroke-2.png") no-repeat center;
   background-size: contain;
   z-index: -1;
+}
+@media only screen and (max-width: 768px) {
+  .brush-bg {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .cookies {

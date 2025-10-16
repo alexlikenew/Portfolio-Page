@@ -1,3 +1,5 @@
+@import "../abstracts/mixins";
+
 button,
 .btn {
   display: flex;
@@ -31,7 +33,9 @@ button,
 	opacity: 0.5;
   }
 
-
+  @include breakpoint(phone) {
+width: 100%;
+  }
 
 }
 

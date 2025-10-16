@@ -6,9 +6,11 @@ import {hybridWorkImage, officeWork, remoteWorkImage} from "../assets/img/index.
 function Collaborate(props) {
     return (
         <div className="w-full mt-20 sm:mt-28 md:mt-32 lg:mt-40 mb-20 sm:mb-28 md:mb-32 lg:mb-40">
-            <div className="container container--1110 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 md:gap-24 lg:gap-36">
+            <div
+                className="container container--1110 flex flex-col-reverse sm:grid-cols-1 md:grid md:grid-cols-2 gap-8 sm:gap-12 md:gap-24 lg:gap-36">
                 <div className="w-full flex justify-center items-center">
-                    <img loading="lazy" src={collaborateImage} className="w-full h-auto max-h-[400px] sm:max-h-[500px] object-cover"
+                    <img loading="lazy" src={collaborateImage}
+                         className="w-full h-auto max-h-[600px] sm:max-h-[600px] object-cover"
                          alt="Team in which i working "/>
                 </div>
                 <div className="w-full flex flex-col">
@@ -21,7 +23,8 @@ function Collaborate(props) {
 
                     <div className="flex flex-col gap-2 sm:gap-3 mb-4 sm:mb-6 md:mb-8">
                         <div className="flex items-center gap-2">
-                            <img className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" src={remoteWorkImage} alt="Remote Work Icon"
+                            <img className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" src={remoteWorkImage}
+                                 alt="Remote Work Icon"
                                  title="Remote Work Icon"/>
                             <span className="text-lg sm:text-xl font-semibold">Remote Collaboration</span>
                         </div>
@@ -32,7 +35,8 @@ function Collaborate(props) {
 
                     <div className="flex flex-col gap-2 sm:gap-3 mb-4 sm:mb-6 md:mb-8">
                         <div className="flex items-center gap-2">
-                            <img className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" src={hybridWorkImage} alt="Hybrid Work Icon"
+                            <img className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" src={hybridWorkImage}
+                                 alt="Hybrid Work Icon"
                                  title="Hybrid Work Icon"/>
                             <span className="text-lg sm:text-xl font-semibold">Hybrid Teams</span>
                         </div>

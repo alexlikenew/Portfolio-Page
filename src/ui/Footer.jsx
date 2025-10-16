@@ -20,25 +20,28 @@ function Footer(props) {
                         or a creative frontend solution, I’m here to turn your ideas into reality.
                         <br></br>Get in touch and let’s make your project stand out.
                     </p>
-                    <Button link="/contact" classes="btn btn-transparent ">Contact <img className="" src={arrowRight}
-                                                                                        alt=""/></Button>
+                    <Button title="Contact" link="/contact" classes="btn btn-transparent ">Contact <img className=""
+                                                                                                        src={arrowRight}
+                                                                                                        alt=""/></Button>
                 </div>
                 <div className="w-full flex flex-col pt-6 sm:pt-8 md:pt-12 border-t-1 border-secondary-300">
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-12">
                         <div className="flex flex-col ">
                             <h3 className="text-base sm:text-lg md:text-lg font-bold mb-2 sm:mb-3 md:mb-4">Home</h3>
-                            <NavLink className="mb-1 sm:mb-2 md:mb-2 text-sm sm:text-base" to="/">
+                            <NavLink title="Home" className="mb-1 sm:mb-2 md:mb-2 text-sm sm:text-base" to="/">
                                 <span>Home</span>
                             </NavLink>
-                            <NavLink className="mb-1 sm:mb-2 md:mb-2 text-sm sm:text-base" to="/about">
+                            <NavLink title="About me" className="mb-1 sm:mb-2 md:mb-2 text-sm sm:text-base" to="/about">
 
                                 <span>About me</span>
-                            </NavLink> <NavLink className="mb-1 sm:mb-2 md:mb-2 text-sm sm:text-base" to="/faq">
-
-                            <span>FAQ</span>
-                        </NavLink>
-                            <NavLink className="mb-1 sm:mb-2 md:mb-2 text-sm sm:text-base" to="/blog"><span>Blog</span></NavLink>
-                            <NavLink className="mb-1 sm:mb-2 md:mb-2 text-sm sm:text-base" to="/contact"><span>Contact</span></NavLink>
+                            </NavLink>
+                            <NavLink title="FAQ" className="mb-1 sm:mb-2 md:mb-2 text-sm sm:text-base" to="/faq">
+                                <span>FAQ</span>
+                            </NavLink>
+                            <NavLink title="Blog" className="mb-1 sm:mb-2 md:mb-2 text-sm sm:text-base"
+                                     to="/blog"><span>Blog</span></NavLink>
+                            <NavLink title="Contact" className="mb-1 sm:mb-2 md:mb-2 text-sm sm:text-base"
+                                     to="/contact"><span>Contact</span></NavLink>
                         </div>
                         <div className="flex flex-col">
                             <h3 className="text-base sm:text-lg md:text-lg font-bold mb-2 sm:mb-3 md:mb-4">Blog</h3>
@@ -47,7 +50,8 @@ function Footer(props) {
                                 <div className="flex justify-center items-center">
                                     <div className="loader"></div>
                                 </div> : articles.slice(0, 5).map((article) => (
-                                    <NavLink className="mb-1 sm:mb-2 md:mb-2 text-sm sm:text-base" to={`/blog/${article.url}`} title={article.title}>
+                                    <NavLink className="mb-1 sm:mb-2 md:mb-2 text-sm sm:text-base"
+                                             to={`/blog/${article.url}`} title={article.title}>
                                         <span>  {article.title.length > 30
                                             ? article.title.slice(0, 26) + '...'
                                             : article.title}</span>
@@ -69,7 +73,8 @@ function Footer(props) {
                         </div>
                         <div className="flex flex-col ">
                             <h3 className="text-base sm:text-lg md:text-lg font-bold mb-2 sm:mb-3 md:mb-4">Contact</h3>
-                            <div className="flex gap-2 sm:gap-3 md:gap-3 align-center mb-1 sm:mb-2 md:mb-2 text-sm sm:text-base">
+                            <div
+                                className="flex gap-2 sm:gap-3 md:gap-3 align-center mb-1 sm:mb-2 md:mb-2 text-sm sm:text-base">
                                 <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_240_2562)">
@@ -91,7 +96,8 @@ function Footer(props) {
                                     Rzeszów, Poland
                                 </span>
                             </div>
-                            <div className="flex gap-2 sm:gap-3 md:gap-3 align-center mb-1 sm:mb-2 md:mb-2 text-sm sm:text-base">
+                            <div
+                                className="flex gap-2 sm:gap-3 md:gap-3 align-center mb-1 sm:mb-2 md:mb-2 text-sm sm:text-base">
                                 <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -112,7 +118,8 @@ function Footer(props) {
 
                     </div>
                     <Follow classes={"bg-secondary-100"}/>
-                    <div className="flex flex-col md:flex-row justify-between mt-6 sm:mt-8 md:mt-12 gap-4 md:gap-0 items-center text-sm sm:text-base">
+                    <div
+                        className="flex flex-col md:flex-row justify-between mt-6 sm:mt-8 md:mt-12 gap-4 md:gap-0 items-center text-sm sm:text-base">
                         <div>© {new Date().getFullYear()} All Rights Reserved</div>
                         <ul className="flex flex-col md:flex-row list-none gap-2 md:gap-4 ">
                             <li className="hidden">

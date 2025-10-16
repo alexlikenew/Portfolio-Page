@@ -1,12 +1,13 @@
 import React from 'react';
 import {aboutMe} from "../assets/img/index.jsx";
 
-function About() {
+function About({classes}) {
     return (
-        <div className="w-full mt-20 sm:mt-28 md:mt-32 lg:mt-40 mb-20 sm:mb-28 md:mb-32 lg:mb-40">
-            <div className="container container--1110 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 md:gap-24 lg:gap-36">
+        <div className={`w-full mt-20 sm:mt-28 md:mt-32 lg:mt-40 mb-20 sm:mb-28 md:mb-32 lg:mb-40 ${classes}`}>
+            <div
+                className="container container--1110 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 md:gap-24 lg:gap-36">
                 <div className="w-full flex flex-col">
-                    <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold relative inline-block text-white">
+                    <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold relative inline-block text-white text-center sm:text-left">
                         About me
                         <span className="brush-bg left-[-25%] w-full h-[3em]"></span>
                     </h2>
@@ -26,7 +27,8 @@ function About() {
                     </div>
                 </div>
                 <div className="w-full flex justify-center items-center">
-                    <img loading="lazy" src={aboutMe} className="w-full h-auto max-h-[400px] sm:max-h-[500px] object-cover"
+                    <img loading="lazy" src={aboutMe}
+                         className="w-full h-auto max-h-[400px] sm:max-h-[500px] object-cover"
                          alt="Image of Oleksandr Petryshyn sitting on a coach"/>
                 </div>
             </div>
