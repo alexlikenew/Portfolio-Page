@@ -32,9 +32,9 @@ function Navigation(props) {
                     <div
                         className="container flex flex-col md:flex-row justify-between items-center pt-2 pb-2 sm:pt-3 sm:pb-3 md:pt-3 md:pb-3">
                         <div className="navbar__bottom--left flex items-start">
-                            <NavLink to="/">
-                                <img src={logoWebp} className="max-h-4 sm:max-h-5 md:max-h-6 opacity-0" alt=""/>
-
+                            <NavLink to="/" title="Home">
+                                <img src={logoWebp} className="max-h-4 sm:max-h-5 md:max-h-6 opacity-0"
+                                     alt="Alexlikenew logo" title="Alexlikenew logo"/>
                             </NavLink>
                         </div>
                         <div className="navbar__bottom--right">
