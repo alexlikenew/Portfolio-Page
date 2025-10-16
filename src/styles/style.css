@@ -498,6 +498,14 @@ body {
 .cookies.show {
   right: 20px;
 }
+@media only screen and (max-width: 768px) {
+  .cookies.show {
+    right: 0;
+    max-width: 100%;
+    left: 0;
+    bottom: 10px;
+  }
+}
 
 .nav.open .navbar__bottom {
   transition: all 0.3s ease-in-out;

@@ -23,14 +23,14 @@ function Cookies() {
 
 
     return (
-        <div className={`cookies flex flex-col md:flex-row items-center justify-between p-4 sm:p-6 md:p-8 gap-4 md:gap-6 ${show ? "show" : ""}`}>
-            <header className="flex items-center gap-2 md:gap-4">
-                <img className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" src={cookieImage} alt="Cookies icon" title="Cookies icon"/>
-                <h2 className="text-base sm:text-lg md:text-xl">Cookies Consent</h2>
+        <div className={`cookies ${show ? "show" : ""}`}>
+            <header>
+                <img className="w-6 h-6" src={cookieImage} alt="Cookies icon" title="Cookies icon"/>
+                <h2>Cookies Consent</h2>
             </header>
 
-            <div className="data flex-1">
-                <p className="text-sm sm:text-base md:text-base">
+            <div className="data">
+                <p>
                     This website uses cookies to improve your browsing experience and
                     analyze traffic.{" "}
                     <NavLink to="/privacy-policy">
@@ -39,11 +39,11 @@ function Cookies() {
                 </p>
             </div>
 
-            <div className="buttons flex flex-col sm:flex-row gap-2 md:gap-4">
-                <Button classes="btn btn-tertiary w-full sm:w-auto" id="acceptBtn" onClick={handleAccept}>
+            <div className="buttons">
+                <Button classes="btn btn-tertiary " id="acceptBtn" onClick={handleAccept}>
                     Accept
                 </Button>
-                <Button classes="btn btn-secondary w-full sm:w-auto" id="declineBtn" onClick={handleDecline}>
+                <Button classes="btn btn-secondary " id="declineBtn" onClick={handleDecline}>
                     Decline
                 </Button>
 

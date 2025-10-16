@@ -72,9 +72,20 @@
 	}
 
   }
+
+
 }
 
-.cookies.show {
-  right: 20px;
+.cookies {
+  &.show {
+	right: 20px;
+
+	@include breakpoint(phone) {
+	  right: 0;
+	  max-width: 100%;
+	  left: 0;
+	  bottom: 10px;
+	}
+  }
 }
 

@@ -36,6 +36,7 @@ import aboutMe from './about-me.webp';
 import aboutWide from './about-wide.webp';
 import authorImage from './author-image.webp';
 import contactPage from './contact-page.png';
+import contactPageMobile from './contact-page-mobile.png';
 import collaborate from './collaborate.png';
 import experienceBg from './experience-background.webp';
 import slowmo from './slowmo.webp';
@@ -63,6 +64,7 @@ export {
     aboutMe,
     aboutWide,
     contactPage,
+    contactPageMobile,
     collaborate,
     experienceBg,
     slowmo,

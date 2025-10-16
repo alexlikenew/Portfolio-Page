@@ -1,7 +1,7 @@
 import React from 'react';
 import arrowRight from '../assets/icons/arrow.svg';
 import Button from "./Button.jsx";
-import {aboutWide, contactPage} from "../assets/img/index.jsx";
+import {aboutWide, contactPage, contactPageMobile} from "../assets/img/index.jsx";
 
 function Hero(props) {
     return (
@@ -17,7 +17,7 @@ function Hero(props) {
             </div>
             <div className="absolute flex sm:hidden w-full h-3/4 bottom-0 left-0 -z-10">
                 <img
-                    src={contactPage}
+                    src={contactPageMobile} loading="lazy"
                     className="w-full h-full object-contain object-bottom sm:hidden flex -z-2 relative"
                     alt=""
                 />
