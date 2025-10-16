@@ -63,15 +63,16 @@ function Navigation(props) {
                                     <a href="https://www.linkedin.com/in/oleksandr-petryshyn/"
                                        title="Linkedin profile page" target="_blank"
                                        rel="noreferrer">
-                                        <img className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" src={linkedinIcon}
+                                        <img className="" src={linkedinIcon}
                                              alt="Linkedin profile page icon"
                                              title="Linkedin profile page"/>
+
                                     </a>
                                 </li>
                                 <li className="flex align-center items-center px-1 md:px-2"><a
                                     href="https://github.com/alexlikenew" title="Github profile page" target="_blank"
                                     rel="noreferrer">
-                                    <img className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" src={githubIcon}
+                                    <img className="" src={githubIcon}
                                          alt="Github profile page icon" title="Github profile page"/>
                                 </a></li>
                             </ul>
