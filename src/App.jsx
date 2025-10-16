@@ -11,6 +11,8 @@ import BlogPage from "./pages/BlogPage.jsx";
 import FAQ from "./pages/FAQ.jsx";
 import {SpeedInsights} from "@vercel/speed-insights/react";
 import AboutPage from "./pages/About.jsx";
+import Privacy from "./pages/Privacy.jsx";
+import Page404 from "./pages/Page-404.jsx";
 
 
 function App() {
@@ -26,12 +28,14 @@ function App() {
                 <BrowserRouter>
                     <Routes>
                         <Route element={<AppLayout/>}>
+                            <Route path="*" element={<Page404/>}/>
                             <Route index path="/" element={<Index/>}/>
                             <Route path="/faq" element={<FAQ/>}/>
                             <Route path="/about" element={<AboutPage/>}/>
                             <Route path="/blog" element={<Blog/>}/>
                             <Route path="/blog/:url" element={<BlogPage/>}/>
                             <Route path="/contact" element={<Contact/>}/>
+                            <Route path="/privacy-policy" element={<Privacy/>}/>
                         </Route>
                     </Routes>
                 </BrowserRouter>

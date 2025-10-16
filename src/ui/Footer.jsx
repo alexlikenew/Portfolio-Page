@@ -122,7 +122,7 @@ function Footer(props) {
                         className="flex flex-col md:flex-row justify-between mt-6 sm:mt-8 md:mt-12 gap-4 md:gap-0 items-center text-sm sm:text-base">
                         <div>© {new Date().getFullYear()} All Rights Reserved</div>
                         <ul className="flex flex-col md:flex-row list-none gap-2 md:gap-4 ">
-                            <li className="hidden">
+                            <li className="">
                                 <NavLink to="/privacy-policy">
                                     <span className="underline">Privacy policy</span>
                                 </NavLink>

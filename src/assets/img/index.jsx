@@ -47,6 +47,7 @@ import argoniumImage from './argonium.jpg';
 import logoSvg from './logo.svg';
 import logoPng from './logo.png';
 import logoWebp from './logo.webp';
+import pageNotfound from './page-not-found.webp';
 
 import hybridWorkImage from './hybrid-work.png';
 import remoteWorkImage from './work-from-home.png';
@@ -67,6 +68,7 @@ export {
     contactPageMobile,
     collaborate,
     experienceBg,
+    pageNotfound,
     slowmo,
     education,
     authorImage,
