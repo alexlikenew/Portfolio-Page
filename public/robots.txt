@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /404
+Disallow: /page404
+
+Sitemap: https://alexlikenew.pl/sitemap.xml

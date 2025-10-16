@@ -73,7 +73,6 @@
 
   }
 
-
 }
 
 .cookies {
@@ -89,3 +88,15 @@
   }
 }
 
+.article-card {
+
+  &:hover &-image {
+
+	  transform: scale(1.05);
+
+  }
+
+  &:hover &-title {
+	color: var(--color-tertiary-300);
+  }
+}

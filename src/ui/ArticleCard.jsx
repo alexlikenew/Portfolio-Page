@@ -4,7 +4,7 @@ import Button from "./Button.jsx";
 import {useTruncateText} from "../utils/Trancate.jsx";
 import {aboutMe, authorImage} from '../assets/img/index.jsx';
 
-function ArticleCard({article}) {
+function ArticleCard({article, delayTime = 0}) {
     const {title, category, readingTime, content, url, createdDate, author, image_url} = article;
     console.log(article)
     const shortTitle = useTruncateText(title, 87)
@@ -61,10 +61,11 @@ function ArticleCard({article}) {
         };
     }, [article]);
     return (
-        <NavLink className="flex w-full flex-col gap-2 sm:gap-3 md:gap-4" to={`/blog/${url}`} title={title}>
-            <div className="flex w-full">
+        <NavLink className="article-card flex w-full flex-col gap-2 sm:gap-3 md:gap-4" to={`/blog/${url}`}
+                 title={title} data-aos="fade-up" data-aos-delay={delayTime}>
+            <div className="flex w-full overflow-hidden">
                 <img loading="lazy"
-                     className="w-full h-auto max-h-[200px] sm:max-h-[250px] md:max-h-[300px] lg:max-h-80 object-cover"
+                     className="article-card-image w-full transition duration-300 h-auto max-h-[200px] sm:max-h-[250px] md:max-h-[300px] lg:max-h-80 object-cover"
                      src={image_url} title={shortTitle}
                      alt={shortTitle}/>
             </div>
@@ -74,7 +75,7 @@ function ArticleCard({article}) {
                         className="text-xs sm:text-sm bg-tertiary px-1.5 sm:px-2 py-0.5 sm:py-1 text-primary">{category}</div>
                     <div className="text-xs sm:text-sm">{readingTime}</div>
                 </div>
-                <div className="text-base sm:text-lg">{shortTitle}</div>
+                <div className="article-card-title transition duration-300 text-base sm:text-lg">{shortTitle}</div>
                 <div className="">
                     <div className="opacity-70 text-sm sm:text-base">{shortContent}</div>
                 </div>

@@ -81,18 +81,20 @@ function Faq(props) {
         <div className="w-full mt-20 sm:mt-28 md:mt-32 lg:mt-40 mb-16 sm:mb-20 md:mb-24 lg:mb-30">
             <div className="container container--768 flex flex-col gap-6 sm:gap-8 md:gap-10">
                 <div className="w-full flex flex-col items-center justify-center gap-6 sm:gap-8 md:gap-10">
-                    <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold relative inline-block text-white">
+                    <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold relative inline-block text-white"
+                        data-aos="fade-up" data-aos-delay="50">
                         FAQ
                         <span className="brush-bg left-[-80%] w-[300%] h-[4em]"></span>
                     </h2>
-                    <p className="opacity-70 mb-2 sm:mb-3 md:mb-4 text-center text-sm sm:text-base">
+                    <p className="opacity-70 mb-2 sm:mb-3 md:mb-4 text-center text-sm sm:text-base" data-aos="fade-up"
+                       data-aos-delay="100">
                         Find answers to the most common questions about my frontend development experience, skills, and
                         projects. <br></br>
                         A helpful guide for clients and recruiters to understand my capabilities and working style.
                     </p>
                 </div>
-                <div className="w-full flex flex-col items-center justify-center gap-2 sm:gap-3">
-                    {faqData.map(question =>
+                <div className="w-full flex flex-col items-center justify-center gap-2 sm:gap-3" data-aos="fade-up">
+                    {faqData.map((question, index) =>
                         <dl id={question.id}
                             className={`w-full flex flex-col justify-center gap-2 cursor-pointer rounded-1 border-1 px-3 sm:px-4 py-4 sm:py-6 transition-all duration-300 ${showAnswer === question.id ? 'border-tertiary-200' : 'border-secondary-300 hover:opacity-90'}`}
                             onClick={() => handleAnswer(question.id)}>

@@ -6,10 +6,10 @@ function Experience(props) {
         <div
             className="w-full justify-center pt-40 sm:pt-32 md:pt-40 lg:pt-60 pb-24 sm:pb-32 md:pb-40 lg:pb-60 relative">
             <div className="absolute w-full h-full top-0 left-0 -z-1">
-                <img src={experienceBg} className="w-full h-full object-cover" alt=""/>
+                <img src={experienceBg} className="w-full h-full " alt=""/>
             </div>
             <div className="container container--1110 flex flex-col">
-                <div className="flex items-center flex-col">
+                <div className="flex items-center flex-col" data-aos="fade-up" data-aos-duration="800">
                     <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold relative inline-block mb-8 sm:mb-12 md:mb-14 lg:mb-18 text-white">Experience
                         <span className="brush-bg left-[-16%] w-[141%] h-[3.3em]"></span></h2>
                     <p className="opacity-70 mb-2 sm:mb-3 md:mb-4 text-center text-sm sm:text-base">I build modern,
@@ -19,10 +19,11 @@ function Experience(props) {
                 </div>
 
                 <div className="flex mt-8 sm:mt-0 flex-col gap-8 sm:gap-6 md:gap-8">
-                    <div className="flex flex-col items-start sm:flex-row gap-4 sm:gap-6 md:gap-8 sm:items-center">
+                    <div className="flex flex-col items-start sm:flex-row gap-4 sm:gap-6 md:gap-8 sm:items-center"
+                         data-aos="fade-up" data-aos-delay="100">
                         <img loading="lazy" className="w-[50px] sm:w-[60px] md:w-[75px]" src={argoniumImage}
-                             alt="Splentum company icon"
-                             title="Splentum"/>
+                             alt="Argonium company icon"
+                             title="Argonium"/>
                         <div className="flex flex-col">
                             <span className="text-base sm:text-lg">Argonium Sp. z o. o.</span>
                             <p className="text-xs sm:text-sm">Jan 2025 – Present |
@@ -35,7 +36,8 @@ function Experience(props) {
                                 multiple projects.</p>
                         </div>
                     </div>
-                    <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-8 sm:items-center items-start">
+                    <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-8 sm:items-center items-start"
+                         data-aos="fade-up" data-aos-delay="200">
                         <img loading="lazy" className="w-[50px] sm:w-[60px] md:w-[75px]" src={splentumImage}
                              alt="Splentum company icon"
                              title="Splentum"/>
@@ -51,7 +53,8 @@ function Experience(props) {
                                 experience.</p>
                         </div>
                     </div>
-                    <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-8 sm:items-center items-start">
+                    <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-8 sm:items-center items-start"
+                         data-aos="fade-up" data-aos-delay="300">
                         <img loading="lazy" className="w-[50px] sm:w-[60px] md:w-[75px]" src={netiImage}
                              alt="Neti company icon" title="Neti"/>
                         <div className="flex flex-col">
@@ -70,15 +73,18 @@ function Experience(props) {
             </div>
 
             <div
-                className="container container--1110 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 md:gap-24 lg:gap-36 mt-30 sm:mt-20 md:mt-32 lg:mt-50">
-                <div className="w-full flex flex-col gap-4 sm:gap-0">
+                className="container container--1110 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 md:gap-24 lg:gap-30 mt-30 sm:mt-20 md:mt-32 lg:mt-50">
+                <div className="w-full flex flex-col gap-4 sm:gap-0" data-aos="fade-right" data-aos-delay="100">
                     <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold relative inline-block text-white mb-12 sm:mb-12 md:mb-14 lg:mb-18 text-center md:text-left">
                         Education
                         <span className="brush-bg left-[-25%] w-full h-[3em]"></span>
                     </h2>
                     <p className="mb-2 sm:mb-3 md:mb-4 text-sm sm:text-base">
                         Bachelor’s Degree in Computer Science — Programming<br></br>
-                        University of Information Technology and Management in Rzeszów (2013–2017)</p>
+                        University of Information Technology and Management in Rzeszów (2013–2017)<br></br>
+                        <a className="hover:text-blue-600 transition duration-300" title="https://wsiz.edu.pl/"
+                           href="https://wsiz.edu.pl/">https://wsiz.edu.pl/</a>
+                    </p>
                     <div className="flex flex-col gap-2 sm:gap-3 mb-4 sm:mb-6 md:mb-8">
                         <span className="text-base sm:text-lg">Algorithms & Data Structures</span>
                         <span className="text-sm sm:text-base opacity-70">Gained hands-on experience designing efficient algorithms and working with various data structures. Strengthened problem-solving and logical thinking skills applicable in software development. </span>
@@ -88,7 +94,7 @@ function Experience(props) {
                         <span className="text-sm sm:text-base opacity-70">Worked with Cisco networks, learning device configuration, protocols, and network management. Developed practical understanding of network architecture complementing programming skills. </span>
                     </div>
                 </div>
-                <div className="w-full flex justify-center items-center">
+                <div className="w-full flex justify-center items-center" data-aos="fade-left" data-aos-delay="100">
                     <img loading="lazy" src={education}
                          className="w-full h-auto max-h-[400px] sm:max-h-[500px] object-cover"
                          title="Image of University of Information Technology and Management in Rzeszów"

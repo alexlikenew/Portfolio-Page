@@ -17,6 +17,7 @@
     "aos": "^2.3.4",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-helmet": "^6.1.0",
     "react-hook-form": "^7.64.0",
     "react-router": "^7.9.3",
     "vite-plugin-imagemin": "^0.6.1"

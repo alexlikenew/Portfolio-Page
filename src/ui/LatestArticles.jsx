@@ -48,7 +48,7 @@ function LatestArticles({articlesCount, classes}) {
         <div
             className={`w-full mt-20 sm:mt-28 md:mt-32 lg:mt-40 mb-20 sm:mb-28 md:mb-32 lg:mb-50 ${classes ? classes : ''}`}>
             <div className="container flex justify-center flex-col gap-6 sm:gap-8 md:gap-10">
-                <div className="flex items-center flex-col">
+                <div className="flex items-center flex-col" data-aos="fade-up" data-aos-delay="50">
                     <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold relative inline-block mb-8 sm:mb-12 md:mb-14 lg:mb-18 text-white">Articles
                         <span className="brush-bg left-[-44%] w-[190%] h-[4.3em]"></span></h2>
                     <p className="opacity-70 mb-2 sm:mb-3 md:mb-4 text-center text-sm sm:text-base">
@@ -60,8 +60,8 @@ function LatestArticles({articlesCount, classes}) {
                 {isPending ? <div className="flex justify-center">Loading...</div> :
                     <div
                         className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-6 md:gap-8">
-                        {articles.slice(0, articlesCount).sort((a, b) => new Date(b.createdDate) - new Date(a.createdDate)).map(article =>
-                            <ArticleCard key={article.url}
+                        {articles.slice(0, articlesCount).sort((a, b) => new Date(b.createdDate) - new Date(a.createdDate)).map((article, index) =>
+                            <ArticleCard delayTime={index * 200} key={article.url}
                                          article={article}/>)}
                     </div>}
                 {!isPending &&

@@ -510,6 +510,13 @@ body {
   }
 }
 
+.article-card:hover .article-card-image {
+  transform: scale(1.05);
+}
+.article-card:hover .article-card-title {
+  color: var(--color-tertiary-300);
+}
+
 .nav.open .navbar__bottom {
   transition: all 0.3s ease-in-out;
   background-color: rgba(252, 252, 252, 0.9);

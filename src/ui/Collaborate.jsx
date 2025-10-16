@@ -8,12 +8,12 @@ function Collaborate(props) {
         <div className="w-full mt-20 sm:mt-28 md:mt-32 lg:mt-40 mb-20 sm:mb-28 md:mb-32 lg:mb-40">
             <div
                 className="container container--1110 flex flex-col-reverse sm:grid-cols-1 md:grid md:grid-cols-2 gap-8 sm:gap-12 md:gap-24 lg:gap-36">
-                <div className="w-full flex justify-center items-center">
+                <div className="w-full flex justify-center items-center" data-aos="fade-right">
                     <img loading="lazy" src={collaborateImage}
                          className="w-full h-auto max-h-[600px] sm:max-h-[600px] object-cover"
                          alt="Team in which i working "/>
                 </div>
-                <div className="w-full flex flex-col">
+                <div className="w-full flex flex-col" data-aos="fade-up" data-aos-delay="50">
                     <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold">How I Work</h2>
                     <p className="opacity-70 mt-2 sm:mt-3 md:mt-4 mb-4 sm:mb-6 md:mb-8 text-sm sm:text-base">
                         Over the years, I’ve worked remotely, in hybrid teams, and on-site — adapting to various
@@ -21,7 +21,8 @@ function Collaborate(props) {
                         I value collaboration, clear communication, and a shared sense of ownership in every project.
                     </p>
 
-                    <div className="flex flex-col gap-2 sm:gap-3 mb-4 sm:mb-6 md:mb-8">
+                    <div className="flex flex-col gap-2 sm:gap-3 mb-4 sm:mb-6 md:mb-8" data-aos="fade-up"
+                         data-aos-delay="100">
                         <div className="flex items-center gap-2">
                             <img className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" src={remoteWorkImage}
                                  alt="Remote Work Icon"
@@ -33,7 +34,8 @@ function Collaborate(props) {
         </span>
                     </div>
 
-                    <div className="flex flex-col gap-2 sm:gap-3 mb-4 sm:mb-6 md:mb-8">
+                    <div className="flex flex-col gap-2 sm:gap-3 mb-4 sm:mb-6 md:mb-8" data-aos="fade-up"
+                         data-aos-delay="150">
                         <div className="flex items-center gap-2">
                             <img className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" src={hybridWorkImage}
                                  alt="Hybrid Work Icon"
@@ -45,7 +47,7 @@ function Collaborate(props) {
         </span>
                     </div>
 
-                    <div className="flex flex-col gap-2 sm:gap-3">
+                    <div className="flex flex-col gap-2 sm:gap-3" data-aos="fade-up" data-aos-delay="200">
                         <div className="flex items-center gap-2">
                             <img className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" src={officeWork} alt="Office Work Icon"
                                  title="Office Work Icon"/>

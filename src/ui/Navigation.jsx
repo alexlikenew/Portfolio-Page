@@ -33,29 +33,29 @@ function Navigation(props) {
                         className="container flex flex-col md:flex-row justify-between items-center pt-2 pb-2 sm:pt-3 sm:pb-3 md:pt-3 md:pb-3">
                         <div className="navbar__bottom--left flex items-start">
                             <NavLink to="/" title="Home">
-                                <img src={logoWebp} className="max-h-4 sm:max-h-5 md:max-h-6 opacity-0"
+                                <img src={logoWebp} className="max-h-4 sm:max-h-5 md:max-h-6 "
                                      alt="Alexlikenew logo" title="Alexlikenew logo"/>
                             </NavLink>
                         </div>
                         <div className="navbar__bottom--right">
                             <ul className="flex  md:flex-row list-none gap-1 md:gap-2 ">
                                 <li className="flex align-center items-center px-2 md:px-3">
-                                    <NavLink to="/">
+                                    <NavLink className="hover:text-blue-800 transition duration-300" to="/">
                                         <span className="text-sm md:text-base">Home </span>
                                     </NavLink>
                                 </li>
                                 <li className="flex align-center items-center px-2 md:px-3">
-                                    <NavLink to="/about">
+                                    <NavLink className="hover:text-blue-800 transition duration-300" to="/about">
                                         <span className="text-sm md:text-base">About me </span>
                                     </NavLink>
                                 </li>
                                 <li className="flex align-center items-center px-2 md:px-3">
-                                    <NavLink to="/blog">
+                                    <NavLink className="hover:text-blue-800 transition duration-300" to="/blog">
                                         <span className="text-sm md:text-base">Blog </span>
                                     </NavLink>
                                 </li>
                                 <li className="flex align-center items-center px-2 md:px-3">
-                                    <NavLink to="/contact">
+                                    <NavLink className="hover:text-blue-800 transition duration-300" to="/contact">
                                         <span className="text-sm md:text-base">Kontakt</span>
                                     </NavLink>
                                 </li>

@@ -4,18 +4,20 @@ function Skills(props) {
     return (
         <div className="w-full mt-20 sm:mt-16 md:mt-24 lg:mt-50 mb-16 sm:mb-12 md:mb-20 lg:mb-30">
             <div className="container flex justify-center flex-col gap-6 sm:gap-8 md:gap-10">
-                <div className="flex items-center flex-col">
+                <div className="flex items-center flex-col" data-aos="fade-up">
                     <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold relative inline-block mb-8 sm:mb-10 md:mb-12 lg:mb-18 text-white">Tools
                         <span className="brush-bg left-[-60%] w-[240%] h-[3.3em]"></span></h2>
-                    <p className="opacity-70 mb-2 sm:mb-3 md:mb-4 text-center text-sm sm:text-base md:text-lg">From design to deployment, I rely on tools that keep my
-                                                                                                               work organized and efficient.<br/>
-                                                                                                               Git, WebStorm, Figma and Vite help me stay focused on what matters most — building great user
-                                                                                                               experiences.</p>
+                    <p className="opacity-70 mb-2 sm:mb-3 md:mb-4 text-center text-sm sm:text-base md:text-lg">From
+                        design to deployment, I rely on tools that keep my
+                        work organized and efficient.<br/>
+                        Git, WebStorm, Figma and Vite help me stay focused on what matters most — building great user
+                        experiences.</p>
                 </div>
 
                 <div className="w-full flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-10 lg:gap-12">
 
-                    <div className="icon-container flex flex-col items-center justify-center gap-3 p-1">
+                    <div data-aos="zoom-in" data-aos-delay="100"
+                         className="icon-container flex flex-col items-center justify-center gap-3 p-1">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                             <g fill="#181616">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -27,7 +29,8 @@ function Skills(props) {
                         <span className=" text-sm">GitHub</span>
                     </div>
 
-                    <div className="icon-container flex flex-col items-center justify-center gap-3 p-1">
+                    <div data-aos="zoom-in" data-aos-delay="150"
+                         className="icon-container flex flex-col items-center justify-center gap-3 p-1">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" xml:space="preserve"><path fill="#E24329" d="m124.755 51.382-.177-.452L107.47 6.282a4.459 4.459 0 0 0-1.761-2.121 4.581 4.581 0 0 0-5.236.281 4.578 4.578 0 0 0-1.518 2.304L87.404 42.088H40.629L29.077 6.746a4.492 4.492 0 0 0-1.518-2.31 4.581 4.581 0 0 0-5.236-.281 4.502 4.502 0 0 0-1.761 2.121L3.422 50.904l-.17.452c-5.059 13.219-.763 28.192 10.537 36.716l.059.046.157.111 26.061 19.516 12.893 9.758 7.854 5.93a5.283 5.283 0 0 0 6.388 0l7.854-5.93 12.893-9.758 26.218-19.634.065-.052c11.273-8.526 15.562-23.472 10.524-36.677z"/>
                             <path fill="#FC6D26"
                                   d="m124.755 51.382-.177-.452a57.79 57.79 0 0 0-23.005 10.341L64 89.682c12.795 9.68 23.934 18.09 23.934 18.09l26.218-19.634.065-.052c11.291-8.527 15.586-23.488 10.538-36.704z"/>
@@ -38,7 +41,8 @@ function Skills(props) {
                         <span className=" text-sm">Gitlab</span>
                     </div>
 
-                    <div className="icon-container flex flex-col items-center justify-center gap-3 p-1">
+                    <div data-aos="zoom-in" data-aos-delay="200"
+                         className="icon-container flex flex-col items-center justify-center gap-3 p-1">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                             <path fill="#0acf83"
                                   d="M45.5 129c11.9 0 21.5-9.6 21.5-21.5V86H45.5C33.6 86 24 95.6 24 107.5S33.6 129 45.5 129zm0 0"/>
@@ -53,7 +57,8 @@ function Skills(props) {
                         <span className=" text-sm">Figma</span>
                     </div>
 
-                    <div className="icon-container flex flex-col items-center justify-center gap-3 p-1">
+                    <div className="icon-container flex flex-col items-center justify-center gap-3 p-1"
+                         data-aos="zoom-in" data-aos-delay="250">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                             <path fill-rule="evenodd" clip-rule="evenodd" fill="#80B5E2"
                                   d="M50.246 41.616c-3.682-.925-7.369-.628-11.26-.022 0 6.805-.014 13.427.037 20.05.002.339.511.929.841.974 4.243.573 8.463.619 12.431-1.315 4.105-2 6.196-6.182 5.654-11.092-.492-4.471-3.139-7.448-7.703-8.595zM127 63.963V3.285c0-2.096.023-2.285-2.012-2.285H3.479C1.5 1 1 1.19 1 3.186v121.509c0 2.018.252 2.021 2.209 2.021 40.555.001 81.231-.009 121.786.037 1.573.002 1.995-.417 1.991-1.959-.054-20.277.014-40.556.014-60.831zm-70.648 5.84C50.795 71.785 45 71.896 39 71.431V94H28v-1.402c0-18.895-.087-37.788-.14-56.682-.006-1.569.243-2.327 2.011-2.507 8.332-.852 16.617-1.81 24.902.133 8.906 2.087 14.041 7.975 14.431 16.11.483 10.074-3.944 16.974-12.852 20.151zm44.31 12.754c-.424 5.771-3.678 9.56-9.015 11.392-7.142 2.452-14.245 1.883-21.225-.891-1.143-.455-1.364-1.031-.987-2.196.687-2.126 1.19-4.312 1.72-6.286 2.951.866 5.757 1.947 8.664 2.458 2.053.361 4.272.149 6.359-.178 1.871-.294 3.217-1.564 3.524-3.572.312-2.041-.303-3.809-2.105-4.895-1.432-.862-3.01-1.479-4.523-2.202-2.433-1.163-5.026-2.075-7.27-3.53-8.831-5.727-5.956-16.383-.063-20.396 3.153-2.146 6.642-3.098 10.377-3.229 4.393-.154 8.623.604 12.778 2.623l-2.195 7.789c-1.74-.616-3.36-1.416-5.07-1.734-2.029-.378-4.157-.589-6.205-.422-2.746.225-4.354 2.12-4.354 4.47 0 1.392.528 2.57 1.689 3.245 1.666.969 3.434 1.768 5.186 2.579 1.896.877 3.898 1.551 5.723 2.552 4.87 2.67 7.405 6.8 6.992 12.423z"/>
@@ -61,7 +66,8 @@ function Skills(props) {
                         <span className=" text-sm">Photoshop</span>
                     </div>
 
-                    <div className="icon-container flex flex-col items-center justify-center gap-3 p-1">
+                    <div data-aos="zoom-in" data-aos-delay="300"
+                         className="icon-container flex flex-col items-center justify-center gap-3 p-1">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                             <path
                                 d="M27.255 80.719c0 7.33-5.978 13.317-13.309 13.317C6.616 94.036.63 88.049.63 80.719s5.987-13.317 13.317-13.317h13.309zm6.709 0c0-7.33 5.987-13.317 13.317-13.317s13.317 5.986 13.317 13.317v33.335c0 7.33-5.986 13.317-13.317 13.317-7.33 0-13.317-5.987-13.317-13.317zm0 0"
@@ -80,7 +86,8 @@ function Skills(props) {
                         <span className=" text-sm">Slack</span>
                     </div>
 
-                    <div className="icon-container flex flex-col items-center justify-center gap-3 p-1">
+                    <div data-aos="zoom-in" data-aos-delay="350"
+                         className="icon-container flex flex-col items-center justify-center gap-3 p-1">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                             <path fill="#23719F"
                                   d="M127 16.142C127 7.779 120.221 1 111.858 1H16.142C7.779 1 1 7.779 1 16.142v95.715C1 120.221 7.779 127 16.142 127h95.716c8.363 0 15.142-6.779 15.142-15.143V16.142zM58 99.54c0 3.807-3.286 6.46-7.093 6.46H23.563C19.756 106 17 103.347 17 99.54V23.23c0-3.808 2.756-7.23 6.563-7.23h27.344C54.714 16 58 19.422 58 23.23v76.31zm55-66.456V64.97c0 3.807-2.936 7.03-6.744 7.03h-27.33C75.118 72 72 68.776 72 64.97V22.866C72 19.058 75.118 16 78.926 16h27.33c3.808 0 6.744 3.058 6.744 6.866v10.218z"/>
@@ -88,7 +95,8 @@ function Skills(props) {
                         <span className=" text-sm">Trello</span>
                     </div>
 
-                    <div className="icon-container flex flex-col items-center justify-center gap-3 p-1">
+                    <div data-aos="zoom-in" data-aos-delay="400"
+                         className="icon-container flex flex-col items-center justify-center gap-3 p-1">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                             <defs>
                                 <linearGradient id="jira-original-a" gradientUnits="userSpaceOnUse" x1="22.034"
@@ -116,7 +124,8 @@ function Skills(props) {
                         <span className=" text-sm">Jira</span>
                     </div>
 
-                    <div className="icon-container flex flex-col items-center justify-center gap-3 p-1">
+                    <div data-aos="zoom-in" data-aos-delay="450"
+                         className="icon-container flex flex-col items-center justify-center gap-3 p-1">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                             <defs>
                                 <linearGradient id="a" x1="38.88" x2="63.72" y1="6.5" y2="95.94"
@@ -151,7 +160,8 @@ function Skills(props) {
                         <span className=" text-sm">WebStorm</span>
                     </div>
 
-                    <div className="icon-container flex flex-col items-center justify-center gap-3 p-1">
+                    <div data-aos="zoom-in" data-aos-delay="500"
+                         className="icon-container flex flex-col items-center justify-center gap-3 p-1">
                         <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
                              text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
                              clip-rule="evenodd" viewBox="0 0 512 509.639">

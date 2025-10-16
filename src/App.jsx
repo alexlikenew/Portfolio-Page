@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useEffect, useState} from 'react'
 import {BrowserRouter, Route, Routes} from "react-router";
 import AppLayout from "./ui/AppLayout.jsx";
 import Index from "./pages/Index.jsx";
@@ -14,10 +14,20 @@ import AboutPage from "./pages/About.jsx";
 import Privacy from "./pages/Privacy.jsx";
 import Page404 from "./pages/Page-404.jsx";
 
+import AOS from "aos";
+import "./styles/aos.css";
+
 
 function App() {
     const [count, setCount] = useState(0)
     const queryClient = new QueryClient();
+
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+           
+        });
+    }, []);
 
     return (
         <>
