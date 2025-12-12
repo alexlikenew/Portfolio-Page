@@ -1,16 +1,39 @@
-# React + Vite
+# Oleksandr Petryshyn – React Frontend Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Demo:** [alexlikenew.pl](https://alexlikenew.pl/)
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A modern, high-performance portfolio website showcasing frontend development expertise. Built with React 19 and
+optimized for speed, accessibility, and SEO.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend**: React 19.1.1, React Router 7.9.3
+- **Styling**: Tailwind CSS 4.1.14, SCSS with responsive mixins
+- **Build & Dev**: Vite 7.1.7, PostCSS 8.5.6
+- **Data & CMS**: Supabase (@supabase/supabase-js 2.74.0)
+- **Forms**: React Hook Form 7.64.0
+- **Performance**: Vercel Speed Insights, image optimization (vite-imagemin, vite-plugin-image-optimizer)
+- **Animations**: AOS (Animate On Scroll 2.3.4), custom SCSS keyframes
+- **SEO**: React Helmet 6.1.0, dynamic meta tags
+- **Code Quality**: ESLint 9.36.0 with React hooks & refresh plugins
+- **Data Fetching**: TanStack React Query 5.90.2
+-
 
-## Expanding the ESLint configuration
+## Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✨ **SEO-Optimized** – Dynamic meta tags, Open Graph support, canonical URLs
+⚡ **Performance-Focused** – Image optimization, lazy loading, Vite bundling
+📱 **Fully Responsive** – Mobile-first design with 6+ breakpoints (xxs to big-desktop)
+🎨 **Smooth Animations** – Fade/pulse effects, scroll-triggered animations
+📝 **Blog System** – Articles with metadata, reading time, author info
+🔗 **React Router** – Client-side routing for multi-page experience
+
+## Highlights
+
+- **Responsive Design**: Custom SCSS breakpoint mixin system for 6+ screen sizes
+- **Meta Management**: PageMeta component for dynamic title, description, OG tags, and canonical URLs
+- **Content Management**: Blog articles fetched from Supabase with loading states
+- **Image Optimization**: Multiple image optimization plugins for web performance
+- **Speed Monitoring**: Vercel Speed Insights integration
